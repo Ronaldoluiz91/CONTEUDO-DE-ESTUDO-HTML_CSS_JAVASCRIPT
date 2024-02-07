@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<hed>
+    <meta charset="utf-8">
+    <title>Videos</title>
+    </head>
+
+    <body>
+        <h1>Inserindo Musica e Video na pagina</h1>
+        <p>Para inserir uma musica mp3 em suas paginas web, o arquivo deve estar em uma pasta dentro da pasta raiz do
+            site. No nosso caso a pasta media </p>
+        <audio controls>
+            <source src="media/audio/metalica_nothing.mp3" type="audio/mpeg">
+        </audio>
+        <section>
+            <p>Veja o video a seguir:</p>
+            <video controls>
+                <source src="media/video/london.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video.ogg">
+                <!-- movie.ogg é usado para maquinas que não suportam video no formato mp4-->
+            </video>
+
+        </section>
+        <br>
+        <hr>
+        <video controls>
+            <source src="media/video/pink-floyd.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video.ogg">
+            <track kind="subtitles" srclang=" pt-br" src="media/video/legenda-ptbr.vtt" label="português Brasil"
+                default>
+            <track kind="subtitles" srclang="en" src="media/video/legenda-en.vtt" label="Inglês" default>
+        </video>
+        <br>
+        <hr>
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/21mDekTZwsw?si=bqSDD6ZDUzrQRweO"
+                title="Brilhante - Curta metragem de animação (2021)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+        <!--A <iframe> tag especifica um quadro embutido.
+    um quadro embutido é usado para incorporar outro documento dentro do HTML atual.-->
+        <hr>
+        <br>
+        <article>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.122705982613!2d-46.6943903237538!3d-23.528088660372433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1706729367964!5m2!1spt-BR!2sbr"
+            width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!--width="" height="": usado para mexer no tamanho -->
+        </article>
+    </body>
+
+</html>
