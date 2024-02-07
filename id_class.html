@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br"> 
+
+<head>
+    <meta charset="utf-8"> 
+    <title>Trabalhando com ID e Classes</title>
+    <style> /*Esta é a declaração de uma ID*/
+        #unico{
+            height: 30px;
+            width: 150px;
+            background-color: yellow;
+        }
+        .categoria{
+            height: 50px;
+            width: 300px;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            /* padding é o documento interno do meu elemento, ja a margem é o espaçamento do meu elemento */
+            border: solid red 5px;
+        }
+        #meio{
+            width: 500px;
+            background-color: teal;
+            border: dashed black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Seletores ID e Class</h1>
+    <hr>
+    <h2>Seletor de ID</h2>
+    <p> Usado para deixar um elemento HTML único e especifico.</p>
+    <p>Deve ser usado uma única vez na pagina.</p>
+    <h3>Exemplo:</h3>
+    <p id="unico">Usando o ID</p>
+    <hr>
+    <h2>Seletor de Class</h2>
+    <p> O seletor de class seleciona o elemento com um atributo especifico.</p>
+    <p>Pode ser usado mais de uma vez na pagina.</p>
+    <h3>Exemplo:</h3>
+    <p class="categoria">Usando uma Class</p>
+    <p class="categoria" id="meio">Usando uma Class</p>
+    <p class="categoria">Usando uma Class</p>
+
+</body>
+</html>
