@@ -7,10 +7,13 @@ table {
     border-radius: 20px;
     font-family: sans-serif;
     padding: 20px;
+    width: 1400px;
 }
 
 img {
-    width: 80px;
+    width: 100px;
+    border-radius: 10px;
+    
 }
 
 td {
