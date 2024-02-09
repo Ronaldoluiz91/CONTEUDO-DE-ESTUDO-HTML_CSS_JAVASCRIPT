@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elemento</title>
+    <style>
+        p::first-line {
+            color: red;
+            font-variant: small-caps;
+        }
+
+        p::first-letter {
+            color: blue;
+            font-size: xx-large;
+        }
+
+        h3::before {
+            content: url(imagens/mao.png);
+            /*colocar conteúdo antes do elemento*/
+        }
+
+        h3::after {
+            content: url(imagens/mao.png);
+            /*colocar conteúdo depois do elemento*/
+        }
+        ::marker{
+            color: red;
+            font-family: cursive;
+            /*Altera apenas os marcadores da lista*/
+        }
+        ::selection{
+            color: violet;
+            background-color: yellow;
+            /*Altera o que for selecionado pelo cursor do usuario*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>pseudo-elemento</h1>
+    <p>Um pseudo elemento CSS é usado para estilizar partes especificadas de um elemento.</p>
+
+    <p>Por exemplo, pode ser usado para:</p>
+    <ul>
+        <li>Estilize a primeira letra ou linha de um elemento</li>
+        <li>Insira conteúdo antes ou depois do conteúdo de um elemento</li>
+    </ul>
+
+    <h3>Estilizando a primeira linha </h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at dolorum eveniet libero ea nesciunt amet
+        eos quod sint molestiae enim, dolore perferendis illum voluptas tenetur, optio asperiores vel ex? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Deserunt temporibus et deleniti voluptates quam inventore quaerat
+        totam, optio amet hic enim! Enim laboriosam veritatis cum, culpa voluptate omnis incidunt. Molestiae?</p>
+
+    <p><strong>Nota</strong> O ::first-linepseudoelemento só pode ser aplicado a elementos de nível de bloco. As
+        seguintes propriedades se aplicam ao ::first-line pseudoelemento:</p>
+
+
+    <ul>
+        <li>propriedades da fonte</li>
+        <li>propriedades de cor</li>
+        <li> propriedades de fundo</li>
+        <li> espaçamento entre palavras</li>
+        <li>espaçamento entre letras</li>
+        <li> decoração de texto</li>
+        <li>alinhamento vertical</li>
+        <li>transformação de texto</li>
+        <li>altura da linha</li>
+    </ul>
+
+    <h3>O ::pseudoelemento da primeira letra</h3>
+    <p>O ::first-letter pseudoelemento é usado para adicionar um estilo especial à primeira letra de um texto.</p>
+
+    <h3>Múltiplos Pseudoelementos</h3>
+    <p>Vários pseudoelementos também podem ser combinados.</p>
+    <p>No exemplo a seguir, a primeira letra de um parágrafo será verde, em tamanho de fonte xx grande. O restante da
+        primeira linha será rosa e em versalete. O restante do parágrafo terá o tamanho e a cor da fonte padrão:</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nemo nisi eaque facilis obcaecati. Nobis
+        repellendus aliquam harum, dolore fugiat esse expedita, assumenda eaque voluptate, ipsa ex! Exercitationem,
+        possimus molestias.</p>
+    <h3>CSS - O pseudo-elemento ::before</h3>
+    <p>O ::before pseudoelemento pode ser usado para inserir algum conteúdo antes do conteúdo de um elemento.</p>
+
+    <h3>CSS - O pseudo-elemento ::after</h3>
+    <p>O ::after pseudoelemento pode ser usado para inserir algum conteúdo após o conteúdo de um elemento.</p>
+    <h3>CSS - O pseudoelemento ::marker</h3>
+    <p>O ::marker pseudoelemento seleciona os marcadores dos itens da lista.</p>
+    <p>Exemplo:</p>
+    <ul>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Leite</li>
+    </ul>
+
+    <ol>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+    </ol>
+    <h3>CSS - O pseudoelemento ::selection</h3>
+    <p>O ::selectionpseudoelemento corresponde à parte de um elemento selecionado por um usuário.<br>As seguintes
+        propriedades CSS podem ser aplicadas a ::selection: color, background, cursore outline.</p>
+
+</body>
+
+</html>
