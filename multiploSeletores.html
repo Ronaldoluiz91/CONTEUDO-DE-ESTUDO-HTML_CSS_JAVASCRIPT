@@ -8,7 +8,7 @@
         h1,
         h2,
         h3 {
-            background-color: blueviolet;
+            background-color: black;
             color: white;
             padding: 5px;
             font-family: cursive;
@@ -26,29 +26,35 @@
             border: solid red 5px;
             width: 200px;
         }
-a:hover{
-    background-color: chartreuse;
-    font-size: 30pt;
-    }
-    img:hover{
-        width: 1000px;
-        height: 500px;
-    }
-    h1::before{
-        content: url(imagens/mao.png);
-    }
-    
-        
+
+        a:hover {
+            background-color: chartreuse;
+            font-size: 30pt;
+        }
+
+        img:hover {
+            width: 1000px;
+            height: 500px;
+        }
+
+        h1::before {
+            content: url(imagens/mao.png);
+        }
+
+        .selecione:hover {
+            background-color: blueviolet;
+            font-size: xx-small;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1>Multiplos Seletores</h1>
+    <h1 class="selecione">Multiplos Seletores</h1>
 
     <p>Usado para navegação por seções/áreas localizadas na mesma página. </p>
 
-    <h2>Psicologia das Cores</h2>
+    <h2 class="selecione">Psicologia das Cores</h2>
     <p>A psicologia das cores é um estudo que contribui para que possamos interpretar como as cores afetam emoções e
         aguçam os sentidos de quem as percebe.</p>
 
@@ -63,8 +69,8 @@ a:hover{
         estudo.</p>
 
 
-    <h3>As cores no marketing</h3>
-    <img src="imagens/cores_mkt.png">
+    <h3 class="selecione">As cores no marketing</h3>
+    <img src="imagens/cores_mkt(1).png">
     <p>Mesmo sabendo da importância que as cores possuem, é comum vê-las junto ao “tópico” design deixados como fatores
         de baixa prioridade em estratégias de empresas dos mais variados setores.
 
@@ -79,7 +85,7 @@ a:hover{
         criou uma roda de emoções ligando-as a determinadas cores.</p>
 
 
-    <h3>As cores nas imagens</h3>
+    <h3 class="selecione">As cores nas imagens</h3>
     <p>Alguns sites podem te ajudar a escolher paletas de cor harmônicas para seus projetos, mas aqui vai uma dica:
         combine cores complementares para destacar elementos de conversão.</p>
 
