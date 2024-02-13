@@ -53,7 +53,6 @@ a:hover {
     width: 65px;
     height: 65px;
 }
-<<<<<<< HEAD
 
 li.submenu ul {
     display: none;
@@ -68,7 +67,5 @@ li.submenu ul li {
 
 li.submenu:hover ul {
     display: block;
-    
 }
-=======
->>>>>>> 99aba65adbbb007b8b98bcb6c5c3f3313650e5af
+
