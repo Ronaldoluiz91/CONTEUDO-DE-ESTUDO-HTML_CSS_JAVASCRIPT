@@ -22,7 +22,6 @@ ul {
     width: 100%;
     font-size: 20px;
     align-items: center;
-
 }
 
 ul>li {
@@ -49,7 +48,24 @@ a {
 a:hover {
     color: #B06761;
 }
-#logo{
+
+#logo {
     width: 65px;
     height: 65px;
+}
+
+li.submenu ul {
+    display: none;
+    position: absolute;
+    font-family: cursive;
+    text-align: center;
+}
+
+li.submenu ul li {
+    display: flex;
+}
+
+li.submenu:hover ul {
+    display: block;
+    
 }
