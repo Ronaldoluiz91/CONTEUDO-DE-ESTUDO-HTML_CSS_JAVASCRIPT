@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title> Revisão Seletores CSS</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <style>
+        #container {
+            max-width: 1000px;
+            width: 90%;
+            margin: 0 auto;
+            background-color: white;
+            position: relative;
+            /*Define o contexto para esse elemento*/
+            height: 700px;
+        }
+
+        body {
+            background-color: black
+        }
+
+
+        #um {
+            
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            background-color: mediumpurple;
+            top: 216px;
+            left: 361px;
+        }
+
+        #dois {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background-color: orange;
+            right: 440px;
+            top: 269px;
+        }
+
+
+        #tres {
+            width: 110px;
+            height: 110px;
+            position: absolute;
+            background-color: #ff0055;
+            bottom: 300px;
+            left: 430px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="um" class="caixas">
+        </div>
+        <div id="dois" class="caixas">
+        </div>
+        <div id="tres" class="caixas">
+        </div>
+
+    </div>
+</body>
+
+</html>
