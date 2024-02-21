@@ -1,11 +1,11 @@
 img {
     background-repeat: no-repeat;
     width: 50%;
-     float:right;
-     padding: 10px 0px 0px 10px;
-     
+    float: right;
+    padding: 10px 0px 0px 10px;
 }
-p{
+
+p {
     font-family: sans-serif;
     font-size: 20px;
     text-align: center;
