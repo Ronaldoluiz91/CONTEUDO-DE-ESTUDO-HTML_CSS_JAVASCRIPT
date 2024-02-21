@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="wiewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .tudo{
+            overflow: auto;
+        }
+        #texto{
+            margin-left: 4px;
+        }
+        #list{
+            float: none;
+            width: auto;
+        }
+        #menulist{
+            margin: 0;
+            padding: 0;
+        }
+        #menuitem{
+            background-color: #cdf0f6;
+            border: solid 1px #d4d4d4;
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+            text-align: center;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+            }
+            .topnav>a{
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 16px;
+            }
+            .topnav a:hover{
+                background-color: #ddd;
+                color: black;
+            }
+
+        @media screen and (min-width: 480px) {
+            /* se for maior que 480 tenha essse comportamento:
+            ao usar max width a estratégia é ao contrario, ou seja de 480 pra baixo*/
+            body{
+                background-color: goldenrod;
+            }
+            #list{
+                width: 200px;
+                float: left;
+            }
+            #texto{
+                margin-left: 216px;
+            }
+        }
+      @media screen and (max-width: 600px){
+        .topnav>a{
+            float: none;
+            width: 100%;
+        }
+      }
+        
+        </style>
+</head>
+
+<body>
+    <h1>@media</h1>
+    <p>Regra, introduzida em CSS2, possibilitou definir regras de estilo diferentes para diferentes tipos de mídia.
+    </p>
+    <p>As consultas de mídia podem ser usadas para verificar muitas coisas, como:</p>
+    <ul>
+        <li>Largura e altura de wiewport</li>
+        <li>Orientação da wiewport(paisagem ou retrato)</li>
+        <li>Resolução</li>
+    </ul>
+    <p>Usando consultas de mídia são uma técnica popular para oferecer um estilo personalizado Folha para desktop,
+        laptops, tablets e smartphones.
+    <p>Exemplos:</p>
+    <div class="tudo">
+        <div id="list">
+            <ul id="menulist">
+                <li id="menuitem">Conteúdo 1</li>
+                <li id="menuitem">Conteúdo 2</li>
+                <li id="menuitem">Conteúdo 3</li>
+                <li id="menuitem">Conteúdo 4</li>
+                <li id="menuitem">Conteúdo 5</li>
+            </ul>
+        </div>
+
+        <div id="texto">
+            <h1>Contéudo de quebra</h1>
+            <p>Quando determinamos as medidas em pixel das orientações da pagina, estamos falando dos chamandos
+                "breakpoints"</p>
+        </div>
+    </div>
+    <h3>MENU</h3>
+    <div class="topnav">
+        <a href="#"> HOME</a>
+        <a href="#"> MENU</a>
+        <a href="#"> CONTATOS</a>
+    </div>
+</body>
+
+</html>
