@@ -7,24 +7,29 @@
     <meta name="wiewport" content="width=device-width, initial-scale=1.0">
     <title>Responsividade</title>
     <style>
-        body{
+        body {
             background-color: pink;
         }
-        .tudo{
+
+        .tudo {
             overflow: auto;
         }
-        #texto{
+
+        #texto {
             margin-left: 4px;
         }
-        #list{
+
+        #list {
             float: none;
             width: auto;
         }
-        #menulist{
+
+        #menulist {
             margin: 0;
             padding: 0;
         }
-        #menuitem{
+
+        #menuitem {
             background-color: #cdf0f6;
             border: solid 1px #d4d4d4;
             border-radius: 4px;
@@ -33,45 +38,51 @@
             padding: 2px;
             text-align: center;
         }
-        .topnav{
+
+        .topnav {
             overflow: hidden;
             background-color: #333;
-            }
-            .topnav>a{
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                padding: 14px 16px;
-            }
-            .topnav a:hover{
-                background-color: #ddd;
-                color: black;
-            }
+        }
+
+        .topnav>a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
         @media screen and (min-width: 480px) {
+
             /* se for maior que 480 tenha essse comportamento:
             ao usar max width a estratégia é ao contrario, ou seja de 480 pra baixo*/
-            body{
+            body {
                 background-color: goldenrod;
             }
-            #list{
+
+            #list {
                 width: 200px;
                 float: left;
             }
-            #texto{
+
+            #texto {
                 margin-left: 216px;
             }
         }
-      @media screen and (max-width: 600px){
-        .topnav>a{
-            float: none;
-            width: 100%;
+
+        @media screen and (max-width: 600px) {
+            .topnav>a {
+                float: none;
+                width: 100%;
+            }
         }
-      }
-        
-        </style>
+    </style>
 </head>
 
 <body>
