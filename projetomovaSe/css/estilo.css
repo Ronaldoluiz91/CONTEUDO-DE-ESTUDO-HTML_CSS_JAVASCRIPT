@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Criando regras utilizando o fluxo do MIBLE FIRST*/
+/*Regras gerais*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(../imagem/hypnotize.png);
+    background-attachment: fixed;
+    /* attachment ira mexer diretamente com a imagem que colocamos no css, neste caso deixar ela fixa */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Regras do Topo*/
+#topo {
+    background-color: rgba(24, 56, 29, 0.9);
+    border-bottom: solid 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 img {
+    margin-top: 25px;
+    width: 200px;
+}
+
+#iconMenu {
+    color: white;
+    cursor: pointer;
+    min-height: 40px;
+    display: block;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+    font-size: 40px;
+}
+
+nav {
+    min-height: 40px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+}
+
+nav a:link,
+nav a:visited,
+#iconMenu:link,
+#iconMenu:visited {
+    text-decoration: none;
+    color: white;
+    transition: background-color 1s;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover,
+nav a:focus,
+#iconMenu:hover,
+#iconMenu:focus {
+    background-color: #a98e12;
+    color: #000;
+    transition: background-color 1s;
+    border-radius: 5%;
+}
+
+/*Regras para o FOOTER*/
+.rodape {
+    border-top: solid #06632e 5px;
+    background-color: #000;
+    color: #7f7f80;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape p,
+li {
+    font-size: 16px;
+}
+
+.rodape img {
+    margin: 0 5px;
+}
+
+.rodape-conteudo {
+    padding: 15px;
+    color: #fff;
+
+}
+
+.rodape-conteudo ul {
+    list-style: none;
+    margin: o auto;
+    padding: 10px 0;
+}
+
+#logo-rodape {
+    min-width: 146px;
+    width: 150 px;
+    margin: 0 auto;
+}
+
+.menu-rodape a {
+    text-decoration: none;
+    color: #7f7f80;
+}
+
+.menu-rodape a:hover {
+    color: #fff;
+}
+
+.redes img {
+    min-width: 35px;
+    width: 35px;
+}
+
+.assinatura {
+    color: #fff;
+    background-color: #7f7f80;
+    text-align: center;
+    height: auto;
+}
+
+.assinatura p {
+    padding-top: 3%;
+}
