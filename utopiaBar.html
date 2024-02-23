@@ -7,13 +7,16 @@
     <meta name="wiewport" content="width=device-width, initial-scale=1.0">
     <title>utopia bar</title>
     <style>
-        p {
-            text-align: center;
+        body {
+            background-color: #9266613b;
+        }
+
+        hr {
+            color: white;
         }
 
         .logo>img {
-            width: 80px;
-            height: 80px;
+            width: 7%;
         }
 
         .logo {
@@ -22,16 +25,11 @@
         }
 
         .frase {
-            background-color: #B06761;
+            background-color: #b66058;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 8px;
             font-family: cursive;
-        }
-
-        .sobreObar>img {
-            width: 80%;
-
         }
 
         .sobreObar {
@@ -40,10 +38,24 @@
             justify-content: center;
         }
 
-        .pratos>img {
-            width: 300px;
-            height: 250px;
-            margin: 5px;
+        .sobreObar>img {
+            width: 50%;
+
+
+
+        }
+
+        #titulo {
+            font-size: larger;
+            font-family: cursive;
+        }
+
+        #texto {
+            font-family: sans-serif;
+            font-size: 18px;
+            max-width: 300px;
+            text-align: center;
+
         }
 
         .pratos {
@@ -52,19 +64,42 @@
             justify-content: space-around;
         }
 
-        @media screen and(min-width: 480px) {
-            .sobreObar>img {
-                width: 70%;
-              
-            }
+        .pratos>img {
+            width: 300px;
+            height: 250px;
+            margin-bottom: 10px;
+            border-radius: 2%;
+
         }
-        
+
+        #info {
+            background-color: #b66058;
+            color: white;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        #info>p {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 620px) {
+            #texto{
+
+            }
+            .sobreObar>img {
+                width: 50%;
+                margin-bottom: 45px;
+                margin-right: 280px;
+                margin-top: 11px;}
+        }
     </style>
 </head>
 
 <body>
     <div class="logo">
-        <img src="imagensUtopia/utopiaLogo-removebg-preview.png" alt="logo utopia">
+        <img src="imagensUtopia/logoutopia-removebg-preview.png" alt="logo utopia">
     </div>
     <div>
         <p class="frase">Ninguém tem a segunda possibilidade de causar a primeira impressão
@@ -74,23 +109,27 @@
     </div>
     <div class="sobreObar">
         <img src="imagensUtopia/Bar.jpg" alt="bar">
-        <p> Sobre o Utopia Bar
-            <br>
-            Como surgiu: Thiago (Proprietário), após uma carreira extensa na área de logística em uma multinacional
-            passando
-            por diversos setores e estado do pais, sempre apreciou empreendimento mais voltado na área alimentícia
-            (como:
-            bares e restaurantes), após a pandemia assolar o mundo inteiro, Thiago com seu “sonho” em mente de elaborar
-            um
-            estabelecimento inovador no ramo alimentício, juntamente com seu pai (seu companheiro incondicional),
-            decidiram
-            procurar um ponto, após identificar através de amigos em comum decidiram criar o Utopia Bar , um lugar
-            inovador,
-            ambiente social e familiar, um lugar para sentir-se “em casa” literalmente, totalmente a vontade, um ponto
-            de
-            encontro de amigos, família, casal (com diversos públicos, etnias, classes sociais e sem distinção alguma de
-            raça, cor e opção sexual) ou seja, um ambiente para Todos.
-        </p>
+        <div id="texto">
+            <p> Sobre o Utopia Bar</p>
+            <p> Como surgiu: Thiago (Proprietário), após uma carreira extensa na área de logística em uma multinacional
+                passando
+                por diversos setores e estado do pais, sempre apreciou empreendimento mais voltado na área alimentícia
+                (como:
+                bares e restaurantes), após a pandemia assolar o mundo inteiro, Thiago com seu “sonho” em mente de
+                elaborar
+                um
+                estabelecimento inovador no ramo alimentício, juntamente com seu pai (seu companheiro incondicional),
+                decidiram
+                procurar um ponto, após identificar através de amigos em comum decidiram criar o Utopia Bar , um lugar
+                inovador,
+                ambiente social e familiar, um lugar para sentir-se “em casa” literalmente, totalmente a vontade, um
+                ponto
+                de
+                encontro de amigos, família, casal (com diversos públicos, etnias, classes sociais e sem distinção
+                alguma de
+                raça, cor e opção sexual) ou seja, um ambiente para Todos.
+            </p>
+        </div>
     </div>
 
     <div class="pratos">
@@ -98,6 +137,20 @@
         <img src="imagensUtopia/spaguette.jpg" alt="spaguete">
         <img src="imagensUtopia/negroni.webp" alt="negroni">
     </div>
+
+    <div id="info">
+        <h2>Localização</h2>
+        <p> Rua Tito... - Vila Romana</P>
+        <p> São Paulo- SP</p>
+        <hr>
+        <h2>Funcionamento</h2>
+        <p> Segunda a Sexta:12:00 as 22:00 horas
+        <p> Sabado:11:00 as 00:00 horas</p>
+        <p> Domingo: 11:00 as 20:00 horas
+        </p>
+    </div>
+
+
 </body>
 
 </html>
