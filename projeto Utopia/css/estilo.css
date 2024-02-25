@@ -19,6 +19,9 @@ figure {
     margin: 0;
     padding: 0;
 }
+hr{
+    max-width: 200px;
+}
 
 img {
     max-width: 100%;
@@ -116,6 +119,11 @@ li {
     width: 150 px;
     margin: 0 auto;
 }
+.endereco{
+    color: white;
+    margin-top: 10px;
+    line-height: 45px;
+}
 
 #logo-rodape img {
     margin-top: 25px;
@@ -148,7 +156,7 @@ li {
 }
 /*Regras Para o Main (Conteudo)*/
 .frase{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: cursive;
     background-color: #B06761;
     color: white;
     text-align: center;
