@@ -5,9 +5,6 @@
 /*Regras gerais*/
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-image: url(../imagem/hypnotize.png);
-    background-attachment: fixed;
-    /* attachment ira mexer diretamente com a imagem que colocamos no css, neste caso deixar ela fixa */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -41,7 +38,7 @@ h1 img {
 }
 
 #iconMenu {
-    color:#000;
+    color: white;
     cursor: pointer;
     min-height: 40px;
     display: block;
@@ -86,7 +83,7 @@ nav a:focus,
 
 /*Regras para o FOOTER*/
 .rodape {
-    border-top: solid #06632e 5px;
+    border-top: solid #B06761 5px;
     background-color: #000;
     color: #7f7f80;
     text-align: center;
@@ -119,7 +116,8 @@ li {
     width: 150 px;
     margin: 0 auto;
 }
-#logo-rodape img{
+
+#logo-rodape img {
     margin-top: 25px;
     width: 200px;
 }
@@ -148,3 +146,38 @@ li {
 .assinatura p {
     padding-top: 3%;
 }
+/*Regras Para o Main (Conteudo)*/
+.frase{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #B06761;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    line-height: 25px;
+}
+.sobreObar img{
+    width: 100%;
+}
+#texto{
+    text-align: center;
+}
+.pratos{
+   
+}
+.card{
+    margin: 20px;
+   background-color: white;
+    padding: 5px;
+    border:  #B06761 1px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid #B06761 1px;
+   }
+.card img{
+    border-radius: 10px;
+}
+
