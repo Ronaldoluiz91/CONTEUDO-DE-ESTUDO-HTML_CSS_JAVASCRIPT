@@ -173,9 +173,7 @@ li {
 #texto{
     text-align: center;
 }
-.pratos{
-   
-}
+
 .card{
     margin: 20px;
    background-color: white;
@@ -190,4 +188,13 @@ li {
     border-radius: 10px;
   
 }
+/*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
 
+.petiscos img{
+    width: 70px;
+    height: 50px;
+    display: flex;
+   border-radius: 5px;
+margin-left: 70%;
+align-items: center;
+}
