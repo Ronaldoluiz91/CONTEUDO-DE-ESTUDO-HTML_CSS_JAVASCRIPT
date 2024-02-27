@@ -19,7 +19,8 @@ figure {
     margin: 0;
     padding: 0;
 }
-hr{
+
+hr {
     max-width: 200px;
 }
 
@@ -119,7 +120,8 @@ li {
     width: 150 px;
     margin: 0 auto;
 }
-.endereco{
+
+.endereco {
     color: white;
     margin-top: 10px;
     line-height: 45px;
@@ -154,8 +156,9 @@ li {
 .assinatura p {
     padding-top: 3%;
 }
-/*Regras Para o Main (Conteudo)*/
-.frase{
+
+/*Regras Para o Index (Conteudo)*/
+.frase {
     font-family: cursive;
     background-color: #B06761;
     color: white;
@@ -167,34 +170,79 @@ li {
     margin-right: 0px;
     line-height: 25px;
 }
-.sobreObar img{
+
+.sobreObar img {
+    margin-top: 2%;
+    margin-bottom: 2%;
     width: 100%;
 }
-#texto{
+
+#texto {
     text-align: center;
+    font-family: sans-serif;
 }
 
-.card{
-    margin: 20px;
-   background-color: white;
+#texto h4 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding: 2%;
+    background-color: #B06761;
+    color: white;
+}
+
+.card {
+    margin: 25px;
+    background-color: white;
     padding: 5px;
-    border:  #B06761 1px;
+    border: #B06761 1px;
     text-align: center;
     border-radius: 10px;
-    border: solid #B06761 1px;
-   
-   }
-.card img{
-    border-radius: 10px;
-  
+    box-shadow: grey 1px 1px 5px;
 }
-/*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
 
-.petiscos img{
-    width: 70px;
-    height: 50px;
+.card h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #b06861a6;
+    padding: 10px;
+    color: #000
+}
+
+.card img {
+    border-radius: 10px;
+    box-shadow: grey 1px 1px 5px;
+}
+
+/*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
+.cardapios{
     display: flex;
-   border-radius: 5px;
-margin-left: 70%;
-align-items: center;
+    padding: 35px;
+    align-items: center;
+    background-color: #b06761;
+}
+.cardapios h3{
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cardapios h3:hover{
+    color: white;
+    box-shadow: black 1px 1px 5px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.cont-petiscos img{
+    width: 100px;
+    height:  85px;
+    border-radius: 5px;
+}
+.preço{
+    color: #B06761;
+}
+.petiscos h3{
+    text-align: center;
+    margin-top: 10px;
+    
 }

@@ -16,62 +16,108 @@
 </head>
 
 <body>
-    <div class="cardapio">
-        <h2>Pratos Principais</h2>
-        <h2>Petiscos</h2>
-        <h2>Bebidas</h2>
-        <br>
+    <header id="topo">
+        <div>
+            <h1>
+                <a href="index.html"><img src="imagens/utopiaLogo-removebg-preview.png" alt="Logotipo"></a>
+            </h1>
+            <span id="iconMenu" class="material-symbols-outlined" onclick="clickMenu()">
+                menu
+            </span>
+            <nav id="itens">
+                <a href="#" tabindex="1">Sobre Nós</a>
+                <!--tabindex é utilizado para a acessibilidade-->
+                <a href="cardapio.html" tabindex="2">Cardapio</a>
+                <a href="#" tabindex="3">Reserva</a>
+                <a href="#" tabindex="4">Localização</a>
+                <a href="#" tabindex="4">Contato</a>
+                <a href="#" tabindex="4">Trabalhe Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo-cardapio">
+        <div class="cardapios">
+            <a href="#" style="text-decoration: none;">
+                <h3>Pratos Principais</h3>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h3>Petiscos</h3>
+            </a>
+            <a href="#" style="text-decoration: none;">
+                <h3>Bebidas</h3>
+            </a>
+        </div>
         <div class="Petiscos">
             <h3>Pitéus da vovó</h3>
             <br>
-            <p>Fritas ou mandioca <p>
-                <p>R$ 26,00</p>
-                <img src="ImagensCardapio/mandioca.jpg" alt="porção mandioca"> 
-            
-            <br>
-            <p>Dadinho de tapioca com geleia de pimenta delicia <img src="ImagensCardapio/dadinhos-de-tapioca.jpg"
-                    alt="porção dadinho"></p>
-            <p>R$ 29,00</p>
-            <br>
-            <p>Pastéis (sabores do dia) 6 unidades <img src="ImagensCardapio/pasteis.webp" alt="pasteis"> </p>
-            <p>R$ 33,00</p>
-            <br>
-            <p>Torresmo "do Anizio"<img src="ImagensCardapio/torresmo.jpg" alt="torresmo"> </p>
-            <p>R$ 39,00</p>
-            <br>
-            <p>Frango a passarinho ou calabresa acebolada <img src="ImagensCardapio/frango a passarinho.png"
-                    alt="frango">
-            </p>
-            <p>R$ 49,00</p>
-            <br>
-            <h3>Bolinhos</h3>
-            <br>
-            <p>Bolinhos de abóbora com gorgonzola (sem medo)</p>
-            <p>R$ 33,00</p>
-            <br>
-            <p>Bolinhos de bacalhau (6 unidades)</p>
-            <p>R$ 33,00</p>
-            <br>
-            <p>Bolinhos de Costela (6 unidades)</p>
-            <p>R$ 33,00</p>
-            <br>
-            <p>Bolinhos de feijoada (6 unidades)</p>
-            <p>R$ 33,00</p>
-            <br>
-            <p>Bolinhos de abóbora com carne seca e requeijão (6 unidades)</p>
-            <p>R$ 33,00</p>
-            <br>
-            <p>Bolinhos de 3 queijos (mussarela, requeijão e queijo minas) 6 unidades</p>
-            <p>R$ 33,00</p>
-            <br>
-            <p>Cxoinhas de bobó de camarão (6 unidades)</p>
-            <p>R$ 33,00</p>
-            <br>
-            <p>Coxinhas cremosas de frango 7 unidades (as queridas da casa)</p>
-            <p>R$ 42,00</p>
-            <br>
-            <p>Croquetas de porco (6 unidades)</p>
-            <p>R$ 33,00</p>
+            <div class="cont-petiscos">
+                <div>
+                    Fritas ou mandioca
+                    <br>
+                    <p class="preço"> R$ 26,00</p>
+                    <img src="ImagensCardapio/mandioca.jpg" alt="porção mandioca">
+                </div>
+                <br>
+                <div>
+                    Dadinho de tapioca com geleia de pimenta delicia
+                    <br>
+                    <p class="preço"> R$ 29,00</p>
+                    <img src="ImagensCardapio/dadinhos-de-tapioca.jpg" alt="porção dadinho">
+                </div>
+                <br>
+                <div>
+                    Pastéis (sabores do dia) 6 unidades
+                    <br>
+                    <p class="preço"> R$ 33,00</p>
+                    <img src="ImagensCardapio/pasteis.webp" alt="pasteis">
+                </div>
+                <br>
+                <div>
+                    Torresmo "do Anizio"
+                    <br>
+                    <p class="preço"> R$ 39,00</p>
+                    <img src="ImagensCardapio/torresmo.jpg" alt="torresmo">
+                </div>
+                <br>
+                <div>
+                    Frango a passarinho ou calabresa acebolada 
+                    <br>
+                    <p class="preço"> R$ 49,00</p>
+                    <img src="ImagensCardapio/frango a passarinho.png" alt="frango">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <h3>Bolinhos</h3>
+        <br>
+        <p>Bolinhos de abóbora com gorgonzola (sem medo)</p>
+        <p>R$ 33,00</p>
+        <br>
+        <p>Bolinhos de bacalhau (6 unidades)</p>
+        <p>R$ 33,00</p>
+        <br>
+        <p>Bolinhos de Costela (6 unidades)</p>
+        <p>R$ 33,00</p>
+        <br>
+        <p>Bolinhos de feijoada (6 unidades)</p>
+        <p>R$ 33,00</p>
+        <br>
+        <p>Bolinhos de abóbora com carne seca e requeijão (6 unidades)</p>
+        <p>R$ 33,00</p>
+        <br>
+        <p>Bolinhos de 3 queijos (mussarela, requeijão e queijo minas) 6 unidades</p>
+        <p>R$ 33,00</p>
+        <br>
+        <p>Cxoinhas de bobó de camarão (6 unidades)</p>
+        <p>R$ 33,00</p>
+        <br>
+        <p>Coxinhas cremosas de frango 7 unidades (as queridas da casa)</p>
+        <p>R$ 42,00</p>
+        <br>
+        <p>Croquetas de porco (6 unidades)</p>
+        <p>R$ 33,00</p>
         </div>
         <br>
         <div>
@@ -110,7 +156,51 @@
             <p>Hoegaarden</p>
             <p>R$ 16,00</p>
         </div>
-    </div>
+    </main>
+
+ <footer class="rodape">
+        <div class="endereco">
+            <h3>Localização</h3>
+
+            <p>Rua Tito... Vila Romana</p>
+            <p>São Paulo - SP</p>
+            <hr>
+            <h3>Horário de Funcionamento:</h3>
+            <p>Segunda a sexta: 12:00 as 22:00 horas</p>
+            <p>Sabado: 11:00 as 00:00 horas</p>
+            <p>Domingo 12:00 as 23:00 horas</p>
+            <hr>
+        </div>
+        <div class="rodape-conteudo">
+            <div id="logo-rodape">
+                <a href="index.html"><img src="imagens/utopiaLogo-removebg-preview.png" alt="Logotipo"></a>
+            </div>
+            <div class="menu-rodape">
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Cardapio</a></li>
+                    <li><a href="#">Reserva</a></li>
+                    <li><a href="#">Localização</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="redes">
+            <aside>
+                <a href="#"><img src="imagens/facebook.png" alt="Logo do Facebook"></a>
+                <a href="#"> <img src="imagens/insta.png" alt="Logo do Instagram"></a>
+            </aside>
+        </div>
+        </div>
+        <div class="assinatura">
+            <p>Desenvolvido por <b>Ronaldo</b> Site acadêmico |
+                Todos os direitos reservados |
+                SENAC TITO &copy; 2024</p>
+
+        </div>
+    </footer>
 
 
 
