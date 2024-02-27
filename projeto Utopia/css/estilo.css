@@ -197,7 +197,11 @@ li {
     border: #B06761 1px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: grey 1px 1px 5px;
+    box-shadow: black 1px 1px 5px;
+}
+.card img{
+    width: 500px;
+    height: 250px;
 }
 
 .card h5 {
