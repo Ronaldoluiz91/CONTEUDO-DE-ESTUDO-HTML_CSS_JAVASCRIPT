@@ -203,6 +203,8 @@ li {
 .card img {
     width: 500px;
     height: 250px;
+    border-radius: 10px;
+    box-shadow: grey 1px 1px 5px;
 }
 
 .card h5 {
@@ -213,10 +215,7 @@ li {
     color: #000
 }
 
-.card img {
-    border-radius: 10px;
-    box-shadow: grey 1px 1px 5px;
-}
+
 
 /*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
 .cardapios {
@@ -310,4 +309,26 @@ li {
 }
 .card-lanche p{
     max-width: 150px;
+}
+.cervejas{
+    background-color: #b0686122;
+}
+.cervejas h3{
+    text-align: center;
+    margin-top: 5px;
+}
+.card-cerveja{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+.card-cerveja img{
+    width: 75px;
+    height: 70px;
+    border-radius: 5px;
+}
+.card-cerveja p{
+width: 150px;
 }
