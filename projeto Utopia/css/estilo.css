@@ -218,26 +218,25 @@ li {
 
 
 /*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
+.conteudo-cardapio{
+    background-color: rgba(154, 65, 65, 0.199);
+}
 .cardapios {
     display: flex;
     padding: 10px;
     align-items: center;
-    background-color: #b06761;
     justify-content: center;
-   
+
 }
 
 .cardapios h3 {
-    color: rgb(221, 197, 197);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    color: black;
+    margin: 6px;
     text-align: center;
 }
 
 .cardapios h3:hover {
-    color: white;
+    color: grey;
     transition: 1s;
 }
 
@@ -245,9 +244,19 @@ li {
     color: #B06761;
 }
 
+/*Petiscos*/
+
+.petiscos {
+    margin: 3px;
+    box-shadow: grey 1px 1px 5px;
+}
+
 .petiscos h3 {
     text-align: center;
     margin-top: 15px;
+    background-color: #B06761;
+    color: white;
+    padding: 5px;
 }
 
 .card-petisco img {
@@ -262,17 +271,27 @@ li {
     justify-content: space-between;
     margin-bottom: 5px;
     padding: 3px;
+    background-color: white;
 }
-.card-petisco p{
+
+.card-petisco p {
     max-width: 150px;
 }
-.bolinhos{
-    background-color: #b0686122;
+
+/*bolinhos*/
+
+.bolinhos {
+    margin: 3px;
+    box-shadow: grey 1px 1px 5px;
+    margin-top: 10px;
 }
 
 .bolinhos h3 {
     text-align: center;
     margin-top: 5px;
+    background-color: #B06761;
+    color: white;
+    padding: 5px;
 }
 
 .card-bolinhos img {
@@ -287,48 +306,111 @@ li {
     justify-content: space-between;
     margin-bottom: 5px;
     padding: 3px;
+    background-color: white
 }
-.card-bolinhos p{
+
+.card-bolinhos p {
     max-width: 150px;
 }
-.lanche h3{
+
+/*lanche*/
+.lanche {
+    margin: 3px;
+    box-shadow: grey 1px 1px 5px;
+    margin-top: 10px;
+}
+
+.lanche h3 {
     text-align: center;
     margin-top: 5px;
+    background-color: #B06761;
+    color: white;
+    padding: 5px;
 }
-.card-lanche{
+
+.card-lanche {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
     padding: 3px;
+    background-color: white;
 }
-.card-lanche img{
+
+.card-lanche img {
     width: 75px;
     height: 70px;
     border-radius: 5px;
 }
-.card-lanche p{
+
+.card-lanche p {
     max-width: 150px;
 }
-.cervejas{
-    background-color: #b0686122;
+
+/*cervejas */
+
+.cervejas {
+    margin: 3px;
+    box-shadow: grey 1px 1px 5px;
+    margin-top: 10px;
 }
-.cervejas h3{
+
+.cervejas h3 {
     text-align: center;
     margin-top: 5px;
+    background-color: #B06761;
+    color: white;
+    padding: 5px;
 }
-.card-cerveja{
+
+.card-cerveja {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
     padding: 3px;
+    background-color: white;
 }
-.card-cerveja img{
+
+.card-cerveja img {
     width: 75px;
     height: 70px;
     border-radius: 5px;
 }
-.card-cerveja p{
-width: 150px;
+
+.card-cerveja p {
+    width: 150px;
+}
+
+/*Long Neck*/
+.long-neck {
+    margin: 3px;
+    box-shadow: grey 1px 1px 5px;
+    margin-bottom: 25px;
+ 
+}
+
+.long-neck h3 {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #B06761;
+    color: white;
+    padding: 5px;
+}
+
+.card-long-neck {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: white;
+  }
+.card-long-neck img{
+    width: 75px;
+    height: 70px;
+    border-radius: 5px;
+}
+.card-long-neck p{
+    width: 150px;
 }
