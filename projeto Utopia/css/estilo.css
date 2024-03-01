@@ -209,196 +209,96 @@ li {
 .conteudo-cardapio{
     background-color: rgba(154, 65, 65, 0.199);
 }
-.cardapios {
+.menu-cardapios {
     display: flex;
     padding: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+  
 
 }
-
-.cardapios h3 {
+.menu-cardapios h3 {
     color: black;
     margin: 6px;
     text-align: center;
 }
-
-.cardapios h3:hover {
+.menu-cardapios h3:hover {
     color: #B06761;
     transition: 1s;
 }
-
 .preço {
     color: #B06761;
 }
 
-/*Petiscos*/
+/*CARD CARDAPIO*/
 
-.petiscos {
+.titulo-cardapio {
     margin: 3px;
     box-shadow: grey 1px 1px 5px;
 }
 
-.petiscos h3 {
+.titulo-cardapio h3{
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 0px;
     background-color: #B06761;
     color: white;
     padding: 5px;
 }
 
-.card-petisco img {
+.card-cardapio img {
     width: 75px;
     height: 70px;
     border-radius: 5px;
 }
 
-.card-petisco {
+.card-cardapio {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     padding: 3px;
     background-color: white;
 }
 
-.card-petisco p {
+.card-cardapio p {
     max-width: 150px;
 }
-
-/*bolinhos*/
-
-.bolinhos {
-    margin: 3px;
-    box-shadow: grey 1px 1px 5px;
-    margin-top: 10px;
+/*PAGINA CONTATO*/
+#form-contato {
+    margin: auto;
+    max-width: 700px;
+    width: 95%;
+}
+#form-contato input,
+#form-contato textarea, #form-contato select{
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+#form-contato input, #form-contato select {
+    height: 30px;
 }
 
-.bolinhos h3 {
+#form-contato label {
+    font-weight: bold;
+}
+.titulo-contato h3{
     text-align: center;
-    margin-top: 5px;
     background-color: #B06761;
     color: white;
-    padding: 5px;
 }
-
-.card-bolinhos img {
-    width: 75px;
-    height: 70px;
-    border-radius: 5px;
-}
-
-.card-bolinhos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    padding: 3px;
-    background-color: white
-}
-
-.card-bolinhos p {
-    max-width: 150px;
-}
-
-/*lanche*/
-.lanche {
-    margin: 3px;
-    box-shadow: grey 1px 1px 5px;
-    margin-top: 10px;
-}
-
-.lanche h3 {
-    text-align: center;
-    margin-top: 5px;
+#form-contato button{
     background-color: #B06761;
     color: white;
-    padding: 5px;
-}
-
-.card-lanche {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    padding: 3px;
-    background-color: white;
-}
-
-.card-lanche img {
-    width: 75px;
-    height: 70px;
+    padding: 2%;
     border-radius: 5px;
 }
+#form-contato button:hover,
+#form-contato button:focus {
+    cursor: pointer;}
 
-.card-lanche p {
-    max-width: 150px;
+.conteudo-contato{
+    margin: 5%;
 }
 
-/*cervejas */
-
-.cervejas {
-    margin: 3px;
-    box-shadow: grey 1px 1px 5px;
-    margin-top: 10px;
-}
-
-.cervejas h3 {
-    text-align: center;
-    margin-top: 5px;
-    background-color: #B06761;
-    color: white;
-    padding: 5px;
-}
-
-.card-cerveja {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    padding: 3px;
-    background-color: white;
-}
-
-.card-cerveja img {
-    width: 75px;
-    height: 70px;
-    border-radius: 5px;
-}
-
-.card-cerveja p {
-    width: 150px;
-}
-
-/*Long Neck*/
-.long-neck {
-    margin: 3px;
-    box-shadow: grey 1px 1px 5px;
-    margin-bottom: 25px;
- 
-}
-
-.long-neck h3 {
-    text-align: center;
-    margin-top: 10px;
-    background-color: #B06761;
-    color: white;
-    padding: 5px;
-}
-
-.card-long-neck {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    padding: 3px;
-    background-color: white;
-  }
-.card-long-neck img{
-    width: 75px;
-    height: 70px;
-    border-radius: 5px;
-}
-.card-long-neck p{
-    width: 150px;
-}
