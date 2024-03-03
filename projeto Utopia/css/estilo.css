@@ -8,6 +8,7 @@ body {
     padding: 0;
     width: 100%;
 }
+
 hr {
     max-width: 200px;
 }
@@ -151,11 +152,7 @@ li {
     background-color: #B06761;
     color: white;
     text-align: center;
-    padding: 7px;
-    margin-top: -10px;
-    margin-bottom: 5px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 5px;
     line-height: 25px;
 }
 
@@ -206,26 +203,30 @@ li {
 
 
 /*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
-.conteudo-cardapio{
+.conteudo-cardapio {
     background-color: rgba(154, 65, 65, 0.199);
 }
+
 .menu-cardapios {
     display: flex;
     padding: 10px;
     align-items: center;
     justify-content: space-around;
-  
+
 
 }
+
 .menu-cardapios h3 {
     color: black;
     margin: 6px;
     text-align: center;
 }
+
 .menu-cardapios h3:hover {
     color: #B06761;
     transition: 1s;
 }
+
 .preço {
     color: #B06761;
 }
@@ -237,7 +238,7 @@ li {
     box-shadow: grey 1px 1px 5px;
 }
 
-.titulo-cardapio h3{
+.titulo-cardapio h3 {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 0px;
@@ -259,46 +260,86 @@ li {
     margin-bottom: 7px;
     padding: 3px;
     background-color: white;
+    text-align: justify;
 }
 
 .card-cardapio p {
     max-width: 150px;
 }
+
 /*PAGINA CONTATO*/
 #form-contato {
     margin: auto;
     max-width: 700px;
     width: 95%;
 }
+
 #form-contato input,
-#form-contato textarea, #form-contato select{
+#form-contato textarea,
+#form-contato select {
     border: solid 1px black;
     width: 100%;
     margin: 4px auto;
 }
-#form-contato input, #form-contato select {
+
+#form-contato input,
+#form-contato select {
     height: 30px;
 }
 
 #form-contato label {
     font-weight: bold;
 }
-.titulo-contato h3{
+
+.titulo-contato h3 {
     text-align: center;
     background-color: #B06761;
     color: white;
 }
-#form-contato button{
+
+#form-contato button {
     background-color: #B06761;
     color: white;
     padding: 2%;
     border-radius: 5px;
 }
+
 #form-contato button:hover,
 #form-contato button:focus {
-    cursor: pointer;}
+    cursor: pointer;
+}
 
-.conteudo-contato{
+.conteudo-contato {
     margin: 5%;
 }
 
+/*Pagina reserva*/
+#form-reserva input,
+#form-reserva select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+#form-reserva input,
+#form-reserva select {
+    height: 30px;
+}
+.conteudo-reserva {
+    margin: 5%;
+}
+/*confirme reserva*/
+.titulo-confirm-reserva{
+    text-align: center;
+}
+#confirm-reserva input,
+#confirm-reserva select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+#confirm-reserva input,
+#confirm-reserva select {
+    height: 30px;}
+    .confirm-reserva{
+        margin: 5%;
+    }

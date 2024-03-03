@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utopia [Página principal]</title>
+    <title>Utopia [Página contato]</title>
     <meta name="description" content="Projeto para o Utopia Bar">
 
 
@@ -16,15 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
-
 </head>
 
 <body>
     <header id="topo">
         <div>
             <h1>
-                <a href="index.html"><img src="imagens/utopiaLogo-removebg-preview.png" alt="Logotipo"></a>
+                <a href="index.html"><img src="imagens/utopiaLogo-removebg-preview.png" Logotipo"></a>
             </h1>
             <span id="iconMenu" class="material-symbols-outlined" onclick="clickMenu()">
                 menu
@@ -33,69 +31,33 @@
                 <a href="Index.html" tabindex="1">Sobre Nós</a>
                 <!--tabindex é utilizado para a acessibilidade-->
                 <a href="cardapio.html" tabindex="2">Cardapio</a>
-                <a href="reserva.html" tabindex="3">Reserva</a>
+                <a href="#" tabindex="3">Reserva</a>
                 <a href="#" tabindex="4">Localização</a>
                 <a href="contato.html" tabindex="4">Contato</a>
                 <a href="#" tabindex="4">Trabalhe Conosco</a>
             </nav>
         </div>
     </header>
-
-    <main class="conteudo">
-        <div class="frase-titulo">
-            <p class="frase">Ninguém tem a segunda possibilidade de causar a primeira impressão.
-                <br>
-                "Aluisio Machado"
+    <div class="confirm-reserva">
+        <div class="titulo-confirm-reserva">
+            <h3>Confirme sua reserva</h3>
+        </div>
+        <form action="" id="confirm-reserva" method="post">
+            <p>
+                <label for="nome">Nome:</label>
+                <input tabindex="1" required type="text" id="nome" name="nome">
             </p>
-        </div>
-
-        <div class="sobreObar">
-            <img src="imagens/Bar.jpg" alt="bar">
-            <div id="texto">
-                <h4> Sobre o Utopia Bar</h4>
-                <p> Como surgiu: <b><i>Thiago</b></i>, após uma carreira extensa na área de logística em uma
-                    multinacional
-                    passando
-                    por diversos setores e estado do pais, sempre apreciou empreendimento mais voltado na área
-                    alimentícia
-                    (como:
-                    bares e restaurantes), após a pandemia assolar o mundo inteiro, Thiago com seu “sonho” em mente
-                    de
-                    elaborar
-                    um
-                    estabelecimento inovador no ramo alimentício, juntamente com seu pai (seu companheiro
-                    incondicional),
-                    decidiram
-                    procurar um ponto, após identificar através de amigos em comum decidiram criar o Utopia Bar , um
-                    lugar
-                    inovador,
-                    ambiente social e familiar, um lugar para sentir-se “em casa” literalmente, totalmente a
-                    vontade, um
-                    ponto
-                    de
-                    encontro de amigos, família, casal (com diversos públicos, etnias, classes sociais e sem
-                    distinção
-                    alguma de
-                    raça, cor e opção sexual) ou seja, um ambiente para Todos.
-                </p>
-            </div>
-        </div>
-        <div class="pratos">
-            <div class="card">
-                <a href="cardapio.html"><img src="imagens/bolinho de feijoada.jpg" alt="bolinho de feijoada"></a>
-                <h5>Petiscos</h5>
-            </div>
-            <div class="card">
-                <a href="cardapio.html"><img src="imagens/Prato-principal-Didge-Steakhouse-Pub.jpg"
-                        alt="Prato principal"></a>
-                <h5>Pratos Principais</h5>
-            </div>
-            <div class="card">
-                <a href="cardapio.html"><img src="imagens/drink.jpg" alt="drink"></a>
-                <h5>Bebidas</h5>
-            </div>
-        </div>
-    </main>
+            <p>
+                <label for="telefone">Celular:</label>
+                <input tabindex="2" required type="tel" id="telefone" name="telefone">
+            </p>
+            <p>
+                <label for="email">email:</label>
+                <input tabindex="3" required type="email" id="email" name="email">
+            </p>
+            <button tabindex="4" id="enviar" name="enviar">Confirmar Rerserva</button>
+        </form>
+    </div>
 
     <footer class="rodape">
         <div class="endereco">
@@ -118,18 +80,17 @@
                 <ul>
                     <li><a href="Index.html">Sobre Nós</a></li>
                     <li><a href="cardapio.html">Cardapio</a></li>
-                    <li><a href="reserva.html">Reserva</a></li>
+                    <li><a href="#">Reserva</a></li>
                     <li><a href="#">Localização</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="#">Trabalhe Conosco</a></li>
                 </ul>
             </div>
-
         </div>
         <div class="redes">
             <aside>
                 <a href="#"><img src="imagens/redes/facebook.png" alt="Logo do Facebook"></a>
-                <a href="#"> <img src="imagens/redes/insta.png" alt="Logo do Instagram"></a>
+                <a href="#"> <img src="imagens/redes/insta.png" Logo do Instagram"></a>
             </aside>
         </div>
         </div>
@@ -140,5 +101,3 @@
         </div>
     </footer>
 </body>
-
-</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utopia [Página contato]</title>
+    <title>Utopia [Página reserva]</title>
     <meta name="description" content="Projeto para o Utopia Bar">
 
 
@@ -14,7 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
@@ -38,38 +38,53 @@
             </nav>
         </div>
     </header>
-    <div class="titulo-contato">
-        <h3>Vamos Conversar</h3>
-        <div class="conteudo-contato">
-            <p> Deixe-nos uma mensagem e uma forma de contato para resposta.</p>
-            <p>Em breve retornaremos</p>
-            <form action="" id="form-contato" method="post">
-                <p>
-                    <label for="nome">Nome:</label>
-                    <input tabindex="5" required type="text" id="nome" name="nome">
-                </p>
-                <p>
-                    <label for="telefone">Celular:</label>
-                    <input tabindex="6" required type="tel" id="telefone" name="telefone">
-                </p>
-                <label for="assunto">Assunto:</label>
-                <select name="assunto" id="assunto">
-                    <option value=""></option>
-                    <option value="">Elogios</option>
-                    <option value="">Reclamações</option>
-                    <option value="">Outros</option>
-                </select>
-                <p>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea tabindex="7" name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
-                </p>
-                <p>
-                    <button tabindex="8" id="limpar" type="reset" name="limpar">Limpar Campos</button>
-                    <button tabindex="9" id="enviar" name="enviar">Enviar Dados</button>
-                </p>
-            </form>
+    <div class="conteudo-reserva">
+        <div class="titulo-reserva">
+            <h3>Faça sua reserva</h3>
         </div>
+        <form action="" id="form-reserva" method="post">
+            <p><label for="reserva">Tipo de reserva:</label>
+                <select name="reserva" id="reserva">
+                    <option value=""></option>
+                    <option value="">Salão Principal</option>
+                    <option value="">Area Externa (churrasqueira)</option>
+                    <option value="">Evento (mais de 30 pessoa)</option>
+                </select>
+            </p>
+            <p><label for="quantidade">Quantidade de pessoas:</label>
+                <select name="quantidade" id="quantidade">
+                    <option value=""></option>
+                    <option value="">1 pessoa</option>
+                    <option value="">2 pessoas</option>
+                    <option value="">3 pessoas</option>
+                    <option value="">4 pessoas</option>
+                    <option value="">5 pessoas</option>
+                    <option value="">6 pessoas</option>
+                    <option value="">7 pessoas</option>
+                    <option value="">8 pessoas</option>
+                    <option value="">9 pessoas</option>
+                    <option value="">10 pessoas</option>
+                </select>
+            </p>
+            <p><label>Data:</label>
+                <input type="date" id="data" name="data">
+            </p>
+            <p><label for="horario">Horario:</label>
+                <select name="horario" id="horario">
+                    <option value=""></option>
+                    <option value="">16:00 horas</option>
+                    <option value="">17:00 horas</option>
+                    <option value="">18:00 horas</option>
+                    <option value="">19:00 horas</option>
+                    <option value="">20:00 horas</option>
+                    <option value="">21:00 horas</option>
+                    <option value="">22:00 horas</option>
+                </select>
+            </p>
+           <a href="confim-reserva.html"> <button tabindex="11" id="enviar" name="enviar">Enviar Reserva</button></a>
+        </form>
     </div>
+
     <footer class="rodape">
         <div class="endereco">
             <h3>Localização</h3>
@@ -97,6 +112,7 @@
                     <li><a href="#">Trabalhe Conosco</a></li>
                 </ul>
             </div>
+
         </div>
         <div class="redes">
             <aside>
@@ -112,5 +128,3 @@
         </div>
     </footer>
 </body>
-
-</html>
