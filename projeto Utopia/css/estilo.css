@@ -200,8 +200,6 @@ li {
     color: #000
 }
 
-
-
 /*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
 .conteudo-cardapio {
     background-color: rgba(154, 65, 65, 0.199);
@@ -320,26 +318,33 @@ li {
     width: 100%;
     margin: 4px auto;
 }
+
 #form-reserva input,
 #form-reserva select {
     height: 30px;
 }
+
 .conteudo-reserva {
     margin: 5%;
 }
+
 /*confirme reserva*/
-.titulo-confirm-reserva{
+.titulo-confirm-reserva {
     text-align: center;
 }
+
 #confirm-reserva input,
 #confirm-reserva select {
     border: solid 1px black;
     width: 100%;
     margin: 4px auto;
 }
+
 #confirm-reserva input,
 #confirm-reserva select {
-    height: 30px;}
-    .confirm-reserva{
-        margin: 5%;
-    }
+    height: 30px;
+}
+
+.confirm-reserva {
+    margin: 5%;
+}
