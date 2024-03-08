@@ -201,23 +201,20 @@ li {
 }
 
 /*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
-.conteudo-cardapio {
-    background-color: rgba(154, 65, 65, 0.199);
-}
-
 .menu-cardapios {
     display: flex;
-    padding: 10px;
     align-items: center;
     justify-content: space-around;
-
-
 }
 
 .menu-cardapios h3 {
     color: black;
     margin: 6px;
     text-align: center;
+    background-color: rgba(211, 84, 84, 0.326);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: black 1px 1px 5px;
 }
 
 .menu-cardapios h3:hover {
@@ -225,18 +222,13 @@ li {
     transition: 1s;
 }
 
-.preço {
-    color: #B06761;
-}
-
-/*CARD CARDAPIO*/
-
-.titulo-cardapio {
-    margin: 3px;
+.conteudo-cardapio {
+    background-color: rgba(154, 65, 65, 0.199);
+    margin: 2px;
     box-shadow: grey 1px 1px 5px;
 }
 
-.titulo-cardapio h3 {
+.conteudo-cardapio h3 {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 0px;
@@ -244,7 +236,11 @@ li {
     color: white;
     padding: 5px;
 }
+.preço {
+    color: #B06761;
+}
 
+/*CARD CARDAPIO*/
 .card-cardapio img {
     width: 75px;
     height: 70px;
