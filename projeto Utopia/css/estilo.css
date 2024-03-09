@@ -195,7 +195,7 @@ li {
 .card h5 {
     font-weight: bold;
     text-transform: uppercase;
-    background-color: #b06861a6;
+    background: linear-gradient(to right, #b7281b, #dcc3c3);
     padding: 10px;
     color: #000
 }
@@ -207,23 +207,24 @@ li {
     justify-content: space-around;
 }
 
+
 .menu-cardapios h3 {
     color: black;
     margin: 6px;
     text-align: center;
-    background-color: rgba(211, 84, 84, 0.326);
+    background: linear-gradient(to right, #B06761, #eabcb7);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: black 1px 1px 5px;
+    box-shadow: grey 1px 1px 6px;
 }
 
 .menu-cardapios h3:hover {
-    color: #B06761;
+    color: grey;
     transition: 1s;
 }
 
 .conteudo-cardapio {
-    background-color: rgba(154, 65, 65, 0.199);
+    background: linear-gradient(to left, #f4b7b1, #f0e1df);
     margin: 2px;
     box-shadow: grey 1px 1px 5px;
 }

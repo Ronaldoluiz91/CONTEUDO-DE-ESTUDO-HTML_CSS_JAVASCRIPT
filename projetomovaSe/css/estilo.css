@@ -427,7 +427,7 @@ iframe {
 
     #topo div {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -439,7 +439,7 @@ iframe {
 
     h1 img {
         margin-top: 18px;
-        margin-left: 65px;
+        margin-left: 25%;
     }
 
     nav {
@@ -583,20 +583,29 @@ iframe {
         flex-direction: column;
         justify-content: space-between;
     }
+
+    h1 img {
+        margin-top: 18px;
+        margin-left: 50%;
+    }
 }
 
+@media screen and (min-width: 1200px) {
 
-    @media screen and (min-width: 1200px) {
-
-        nav {
-            width: 980px;
-        }
-
-        .conteudo {
-            width: 980px;
-        }
-
-        #localizacao-end {
-            height: 770px;
-        }
+    nav {
+        width: 980px;
     }
+
+    .conteudo {
+        width: 980px;
+    }
+
+    #localizacao-end {
+        height: 770px;
+    }
+
+    h1 img {
+        margin-top: 18px;
+        margin-left: 70%;
+    }
+}
