@@ -178,8 +178,8 @@ li {
 .card {
     margin: 25px;
     background-color: white;
-    padding: 5px;
-    border: #B06761 1px;
+    padding: 3px;
+    border: #B06761 10px;
     text-align: center;
     border-radius: 10px;
     box-shadow: black 1px 1px 5px;
@@ -188,7 +188,7 @@ li {
 .card img {
     width: 500px;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     box-shadow: grey 1px 1px 5px;
 }
 
@@ -210,18 +210,15 @@ li {
 
 .menu-cardapios h3 {
     color: black;
-    margin: 6px;
+    margin: 10px;
     text-align: center;
-    background: linear-gradient(to right, #B06761, #eabcb7);
-    border-radius: 10px;
+    background: linear-gradient(to right, #f4d6d6, #f59a9a);
+    border-radius: 5px;
     padding: 10px;
     box-shadow: grey 1px 1px 6px;
 }
 
-.menu-cardapios h3:hover {
-    color: grey;
-    transition: 1s;
-}
+
 
 .conteudo-cardapio {
     background: linear-gradient(to left, #f4b7b1, #f0e1df);

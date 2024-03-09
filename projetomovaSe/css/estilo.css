@@ -483,6 +483,7 @@ iframe {
         display: flex;
         justify-content: center;
         align-items: center;
+     
     }
 
     .acessorios {
@@ -528,6 +529,9 @@ iframe {
         display: flex;
         justify-content: flex-end;
     }
+    .card-conteudo figure img {
+        height: 120px;
+        width: 210px;
 }
 
 @media screen and (min-width:930px) {
@@ -584,9 +588,9 @@ iframe {
         justify-content: space-between;
     }
 
-    h1 img {
+   #topo h1 img {
         margin-top: 18px;
-        margin-left: 50%;
+        width: 100%;
     }
 }
 
@@ -604,8 +608,8 @@ iframe {
         height: 770px;
     }
 
-    h1 img {
+   #topo h1 img {
         margin-top: 18px;
-        margin-left: 70%;
+        width: 100%;
     }
 }
