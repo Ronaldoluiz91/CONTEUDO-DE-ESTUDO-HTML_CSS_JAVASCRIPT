@@ -437,11 +437,6 @@ iframe {
         width: 150px;
     }
 
-    h1 img {
-        margin-top: 18px;
-        margin-left: 25%;
-    }
-
     nav {
         width: 100%;
         display: flex;
@@ -483,7 +478,7 @@ iframe {
         display: flex;
         justify-content: center;
         align-items: center;
-     
+
     }
 
     .acessorios {
@@ -525,91 +520,93 @@ iframe {
         margin: 0 15%;
     }
 
+    /*modificações teste*/
     #itens {
         display: flex;
         justify-content: flex-end;
     }
+
     .card-conteudo figure img {
         height: 120px;
         width: 210px;
-}
-
-@media screen and (min-width:930px) {
-    .card-conteudo figure img {
-        height: 150px;
-        width: 210px;
     }
-
-    .text-destaque h2 {
-        margin-top: -4px;
-        padding-top: 13px;
-    }
-
-    .text-destaque p {
-        margin-top: 0;
-        font-size: 1.1em;
-    }
-
-    #frase p {
-        padding-top: 24px;
-        font-size: 1.1em;
-    }
-
-    .produtos {
-        height: auto;
-    }
-
-    .acesse {
-        margin: 20px auto;
-    }
-
-    #conteudo-contato {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .conteudo-info article {
-        margin: 15px 5px;
-        padding: 2%;
-    }
-
-    .localizacao iframe {
-        height: 500px;
-    }
-
-    #localizacao-end {
-        height: 745px;
-    }
-
-    .produtos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-   #topo h1 img {
+    h1 img{
         margin-top: 18px;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    nav {
-        width: 980px;
+        padding: 0px 20%;
     }
 
-    .conteudo {
-        width: 980px;
+    @media screen and (min-width:930px) {
+        .card-conteudo figure img {
+            height: 150px;
+            width: 210px;
+        }
+
+        .text-destaque h2 {
+            margin-top: -4px;
+            padding-top: 13px;
+        }
+
+        .text-destaque p {
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+
+        #frase p {
+            padding-top: 24px;
+            font-size: 1.1em;
+        }
+
+        .acesse {
+            margin: 20px auto;
+        }
+
+        #conteudo-contato {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .conteudo-info article {
+            margin: 15px 5px;
+            padding: 2%;
+        }
+
+        .localizacao iframe {
+            height: 500px;
+        }
+
+        #localizacao-end {
+            height: 745px;
+        }
+
+        /*modoficações teste*/
+        .produtos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+        }
+
+        #topo h1 img {
+            padding: 0px 35%;
+        }
     }
 
-    #localizacao-end {
-        height: 770px;
-    }
+    @media screen and (min-width:1200px) {
 
-   #topo h1 img {
-        margin-top: 18px;
-        width: 100%;
+        nav {
+            width: 980px;
+        }
+
+        .conteudo {
+            width: 980px;
+        }
+
+        #localizacao-end {
+            height: 770px;
+        }
+        /*modificações teste*/
+        #topo h1 img {
+            padding: 0px 3rem;
+        }
     }
-}
