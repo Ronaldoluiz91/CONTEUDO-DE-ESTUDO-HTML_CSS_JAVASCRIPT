@@ -191,6 +191,10 @@ li {
     border-radius: 10px 10px 0px 0px;
     box-shadow: grey 1px 1px 5px;
 }
+.card img:hover{
+    filter: opacity(0.6);
+    transition: 1s;
+}
 
 .card h5 {
     font-weight: bold;
@@ -264,6 +268,7 @@ li {
     margin: auto;
     max-width: 700px;
     width: 95%;
+    text-align: center;
 }
 
 #form-contato input,
@@ -303,6 +308,7 @@ li {
 
 .conteudo-contato {
     margin: 5%;
+    text-align: center;
 }
 
 /*Pagina reserva*/
@@ -317,9 +323,19 @@ li {
 #form-reserva select {
     height: 30px;
 }
+#form-reserva label{
+    font-weight: bold;
+}
 
 .conteudo-reserva {
     margin: 5%;
+    text-align: center;
+}
+.conteudo-reserva button{
+    background-color: #B06761;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
 }
 
 /*confirme reserva*/
@@ -341,4 +357,48 @@ li {
 
 .confirm-reserva {
     margin: 5%;
+}
+
+/*Pagina trabalhe conosco*/
+.trabalhe{
+    text-align: center;
+}
+.trabalhe h3{
+    background-color: #B06761;
+    color: white;
+}
+.botao{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#form-trabalhe {
+    margin: auto;
+    max-width: 700px;
+    width: 95%;
+}
+
+#form-trabalhe input,
+#form-trabalhe textarea,
+#form-trabalhe select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+
+#form-trabalhe input,
+#form-trabalhe select {
+    height: 30px;
+}
+
+#form-trabalhe label {
+    font-weight: bold;
+}
+#form-trabalhe p{
+    text-align: center;
+}
+#form-trabalhe button{
+    background-color: #B06761;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
 }

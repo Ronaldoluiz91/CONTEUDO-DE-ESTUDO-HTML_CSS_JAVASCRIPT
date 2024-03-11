@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utopia [Página contato]</title>
+    <title>Utopia [Página principal]</title>
     <meta name="description" content="Projeto para o Utopia Bar">
 
 
@@ -22,7 +22,7 @@
     <header id="topo">
         <div>
             <h1>
-                <a href="index.html"><img src="imagens/utopiaLogo-removebg-preview.png" Logotipo"></a>
+                <a href="index.html"><img src="imagens/utopiaLogo-removebg-preview.png" alt="Logotipo"></a>
             </h1>
             <span id="iconMenu" class="material-symbols-outlined" onclick="clickMenu()">
                 menu
@@ -33,30 +33,40 @@
                 <a href="cardapio.html" tabindex="2">Cardapio</a>
                 <a href="reserva.html" tabindex="3">Reserva</a>
                 <a href="contato.html" tabindex="4">Contato</a>
-                <a href="#" tabindex="5">Trabalhe Conosco</a>
+                <a href="trabalheConosco.html" tabindex="4">Trabalhe Conosco</a>
             </nav>
         </div>
     </header>
-    <div class="confirm-reserva">
-        <div class="titulo-confirm-reserva">
-            <h3>Confirme sua reserva</h3>
+        <div class="trabalhe">
+            <h3>Venha Trabalhar conosco</h3>
+            <p>Faça parte do nosso time Utopia</p>
+            <p>Preencha os campos abaixo.
         </div>
-        <form action="" id="confirm-reserva" method="post">
+        <form action="" id="form-trabalhe" method="post">
             <p>
                 <label for="nome">Nome:</label>
-                <input tabindex="1" required type="text" id="nome" name="nome">
+                <input tabindex="5" required type="text" id="nome" name="nome">
             </p>
             <p>
                 <label for="telefone">Celular:</label>
-                <input tabindex="2" required type="tel" id="telefone" name="telefone">
+                <input tabindex="6" required type="tel" id="telefone" name="telefone">
             </p>
             <p>
                 <label for="email">email:</label>
-                <input tabindex="3" required type="email" id="email" name="email">
+                <input tabindex="7" required type="email" id="email" name="email">
             </p>
-            <button tabindex="4" id="enviar" name="enviar">Confirmar Rerserva</button>
+            <p>
+                <label for="nome">Cargo/Função:</label>
+                <input tabindex="8" required type="text" id="cargo" name="cargo">
+            </p>
+            <p>
+                <label for="mensagem">Mensagem:</label>
+                <textarea tabindex="9" name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
+            </p>
+            <p>
+            <button tabindex="10" id="enviar" name="enviar">Enviar Dados</button>
+            </p>
         </form>
-    </div>
 
     <footer class="rodape">
         <div class="endereco">
@@ -81,14 +91,15 @@
                     <li><a href="cardapio.html">Cardapio</a></li>
                     <li><a href="reserva.html">Reserva</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
                 </ul>
             </div>
+
         </div>
         <div class="redes">
             <aside>
                 <a href="#"><img src="imagens/redes/facebook.png" alt="Logo do Facebook"></a>
-                <a href="#"> <img src="imagens/redes/insta.png" Logo do Instagram"></a>
+                <a href="#"> <img src="imagens/redes/insta.png" alt="Logo do Instagram"></a>
             </aside>
         </div>
         </div>
@@ -98,4 +109,5 @@
                 SENAC TITO &copy; 2024</p>
         </div>
     </footer>
+
 </body>
