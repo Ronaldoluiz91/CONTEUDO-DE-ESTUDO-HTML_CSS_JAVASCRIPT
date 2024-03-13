@@ -221,6 +221,10 @@ li {
     padding: 10px;
     box-shadow: grey 1px 1px 6px;
 }
+.item-cardapios:hover{
+    filter: opacity(0.6);
+    transition: 2s; 
+}
 
 
 
