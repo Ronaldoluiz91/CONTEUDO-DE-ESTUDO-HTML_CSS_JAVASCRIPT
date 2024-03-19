@@ -41,7 +41,7 @@ h1 img {
     font-size: 40px;
 }
 
-nav {
+#itens {
     min-height: 40px;
     display: block;
     text-transform: uppercase;
@@ -49,6 +49,8 @@ nav {
     overflow: hidden;
     line-height: 40px;
     padding-left: 1%;
+    display: none;
+
 }
 
 nav a:link,
@@ -148,7 +150,6 @@ li {
 
 /*Regras Para o Index (Conteudo)*/
 .frase {
-    font-family: cursive;
     background-color: #B06761;
     color: white;
     text-align: center;
@@ -211,7 +212,6 @@ li {
     justify-content: space-around;
 }
 
-
 .menu-cardapios h3 {
     color: black;
     margin: 10px;
@@ -225,8 +225,6 @@ li {
     filter: opacity(0.6);
     transition: 2s; 
 }
-
-
 
 .conteudo-cardapio {
     background: linear-gradient(to left, #f4b7b1, #f0e1df);
@@ -251,22 +249,25 @@ li {
     width: 75px;
     height: 70px;
     border-radius: 5px;
+    margin: 0;
 }
 
 .card-cardapio {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 7px;
     padding: 3px;
     background-color: white;
     text-align: justify;
 }
-
-.card-cardapio p {
+.textTam{
+    width:140px;
+    margin: 0 auto;
+    text-align: left;
+}
+.card-cardapio p{
     max-width: 150px;
 }
-
 /*PAGINA CONTATO*/
 #form-contato {
     margin: auto;
