@@ -1,18 +1,14 @@
 //alert('funcionou')
-var btnmostrar = document.getElementById('iconMenu');
-var menus = document.querySelector('itens');
+var btnmostrar = document.getElementById('iconMenu'); // icone  do menu
+var menus = document.getElementById('itens'); // menu a ser ocultado e/ou mostrado
 
-/*btnmostrar.onclick = function()
-{
-    if(menus.style.display === 'none')
+btnmostrar.addEventListener('click', function() {
+    if(menus.style.display === 'block')
     {
-        menus.style.display === 'block';
-    }
-     else{
         menus.style.display = 'none';
     }
-};*/
+     else{
+        menus.style.display = 'block';
+    }
 
-btnmostrar.addEventListener('click', () =>{
-    menus.classList.toggle('active');
 })

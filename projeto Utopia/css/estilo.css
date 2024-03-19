@@ -15,6 +15,7 @@ hr {
 
 img {
     max-width: 100%;
+    margin-bottom: -40px;
 }
 
 /*Regras do Topo*/
@@ -34,23 +35,25 @@ h1 img {
     color: white;
     cursor: pointer;
     min-height: 40px;
-    display: block;
+    display: flex;
     overflow: hidden;
     line-height: 40px;
     padding-left: 1%;
     font-size: 40px;
+    justify-content: end;
+    position: relative;
+    bottom: 167px;
+
 }
 
 #itens {
     min-height: 40px;
-    display: block;
     text-transform: uppercase;
     font-weight: bold;
     overflow: hidden;
     line-height: 40px;
     padding-left: 1%;
     display: none;
-
 }
 
 nav a:link,
@@ -70,9 +73,7 @@ nav a:hover,
 nav a:focus,
 #iconMenu:hover,
 #iconMenu:focus {
-    background-color: #B06761;
-    color: black;
-    transition: background-color 1s;
+    color: white;
     border-radius: 5%;
 }
 
@@ -179,7 +180,8 @@ li {
 .card {
     margin: 25px;
     background-color: white;
-    padding: 3px;
+    padding: 0px;
+    padding-bottom: 1px;
     border: #B06761 10px;
     text-align: center;
     border-radius: 10px;
@@ -202,7 +204,12 @@ li {
     text-transform: uppercase;
     background: linear-gradient(to right, #b7281b, #dcc3c3);
     padding: 10px;
-    color: #000
+    color: #000;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    
 }
 
 /*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
