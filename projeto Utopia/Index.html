@@ -15,28 +15,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <header id="topo">
-       <h1>
-            <a id="logotipo" href="index.html"><img src="imagens/utopiaLogo-removebg-preview.png" alt="Logotipo"></a>
-        </h1> 
+    <h1>
+        <a id="logotipo" href="index.html"><img src="imagens/utopiaLogo-removebg-preview.png" alt="Logotipo"></a>
+    </h1>
 
-        <span id="iconMenu" class="material-symbols-outlined" onclick="clickMenu()">
-            menu
+    <span id="iconMenu" class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+    </span>
+
+    <nav id="itens">
+        <span id="iconClose" class="material-symbols-outlined" onclick="clickMenu()">
+            close
         </span>
-
-        <nav id="itens">
-            <span id="iconClose" class="material-symbols-outlined" onclick="clickMenu()">
-                close
-            </span>
-            <a href="Index.html" tabindex="1">Sobre Nós</a>
-            <!--tabindex é utilizado para a acessibilidade-->
-            <a href="cardapio.html" tabindex="2">Cardapio</a>
-            <a href="reserva.html" tabindex="3">Reserva</a>
-            <a href="contato.html" tabindex="4">Contato</a>
-            <a href="trabalheConosco.html" tabindex="5">Trabalhe Conosco</a>
-        </nav>
+        <a href="Index.html" tabindex="1">Sobre Nós</a>
+        <!--tabindex é utilizado para a acessibilidade-->
+        <a href="cardapio.html" tabindex="2">Cardapio</a>
+        <a href="reserva.html" tabindex="3">Reserva</a>
+        <a href="contato.html" tabindex="4">Contato</a>
+        <a href="trabalheConosco.html" tabindex="5">Trabalhe Conosco</a>
+    </nav>
     </div>
 </header>
 
@@ -88,6 +89,10 @@
             <a href="cardapio.html"><img src="imagens/Prato-principal-Didge-Steakhouse-Pub.jpg"
                     alt="Prato principal"></a>
             <h5>Pratos Principais</h5>
+        </div>
+        <div class="card">
+            <a href="cardapio.html"><img src="imagens/lanches.webp" alt="lanche"></a>
+            <h5>Lanches</h5>
         </div>
         <div class="card">
             <a href="cardapio.html"><img src="imagens/drink.jpg" alt="drink"></a>

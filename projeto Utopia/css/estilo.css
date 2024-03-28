@@ -25,9 +25,10 @@ img {
     background: linear-gradient(to left, #b7281bd5, rgb(233, 189, 189));
     position: relative;
     bottom: 22px;
-    
+
 }
- h1 img {
+
+h1 img {
     width: 50px;
     margin-bottom: 0px;
     margin-left: 20px;
@@ -47,7 +48,8 @@ img {
     bottom: 70px;
 
 }
-#iconClose{
+
+#iconClose {
     color: white;
     cursor: pointer;
     display: flex;
@@ -67,7 +69,7 @@ img {
     position: relative;
     bottom: 40px;
     background-color: rgba(33, 33, 33, 0.901);
-     
+
 }
 
 nav a:link,
@@ -207,12 +209,12 @@ li {
 }
 
 .card img {
-    width: 500px;
-    height: 250px;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
     box-shadow: grey 1px 1px 5px;
 }
-.card img:hover{
+
+.card img:hover {
     filter: opacity(0.6);
     transition: 1s;
 }
@@ -227,7 +229,7 @@ li {
     margin-bottom: 10px;
     margin-left: 3px;
     margin-right: 3px;
-    
+
 }
 
 /*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
@@ -246,9 +248,10 @@ li {
     padding: 10px;
     box-shadow: grey 1px 1px 6px;
 }
-.item-cardapios:hover{
+
+.item-cardapios:hover {
     filter: opacity(0.6);
-    transition: 2s; 
+    transition: 2s;
 }
 
 .conteudo-cardapio {
@@ -265,6 +268,7 @@ li {
     color: white;
     padding: 5px;
 }
+
 .preço {
     color: #B06761;
 }
@@ -285,14 +289,17 @@ li {
     background-color: white;
     text-align: justify;
 }
-.textTam{
-    width:140px;
+
+.textTam {
+    width: 140px;
     margin: 0 auto;
     text-align: left;
 }
-.card-cardapio p{
+
+.card-cardapio p {
     max-width: 150px;
 }
+
 /*PAGINA CONTATO*/
 #form-contato {
     margin: auto;
@@ -353,7 +360,8 @@ li {
 #form-reserva select {
     height: 30px;
 }
-#form-reserva label{
+
+#form-reserva label {
     font-weight: bold;
 }
 
@@ -361,7 +369,8 @@ li {
     margin: 5%;
     text-align: center;
 }
-.conteudo-reserva button{
+
+.conteudo-reserva button {
     background-color: #B06761;
     color: white;
     padding: 2%;
@@ -390,17 +399,20 @@ li {
 }
 
 /*Pagina trabalhe conosco*/
-.trabalhe{
+.trabalhe {
     text-align: center;
 }
-.trabalhe h3{
+
+.trabalhe h3 {
     background-color: #B06761;
     color: white;
 }
-.botao{
+
+.botao {
     text-align: center;
     margin-bottom: 10px;
 }
+
 #form-trabalhe {
     margin: auto;
     max-width: 700px;
@@ -423,12 +435,45 @@ li {
 #form-trabalhe label {
     font-weight: bold;
 }
-#form-trabalhe p{
+
+#form-trabalhe p {
     text-align: center;
 }
-#form-trabalhe button{
+
+#form-trabalhe button {
     background-color: #B06761;
     color: white;
     padding: 2%;
     border-radius: 5px;
+}
+
+
+/* começando a parte responsiva da pagina Index */
+@media screen and (min-width:768px) {
+    .pratos {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: 334px;
+    }
+
+    .card img {
+        width: 440px;
+        height: 300px;
+    }
+
+    .card h5 {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .pratos {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
