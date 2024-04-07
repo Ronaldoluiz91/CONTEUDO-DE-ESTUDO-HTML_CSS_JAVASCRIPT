@@ -1,5 +1,15 @@
 @charset "utf-8";
-/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rubik+Mono+One&family=Rubik+Scribble&family=Workbench&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Racing+Sans+One&family=Rubik+Mono+One&family=Rubik+Scribble&family=Workbench&display=swap');
+
+
+
+
 
 /*Criando regras utilizando o fluxo do MOBILE FIRST*/
 /*Regras gerais*/
@@ -7,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+
 }
 
 hr {
@@ -16,6 +27,7 @@ hr {
 img {
     max-width: 100%;
     margin-bottom: -40px;
+
 }
 
 /*Regras do Topo*/
@@ -172,9 +184,20 @@ li {
     background: linear-gradient(to left, #b7281bd5, rgb(233, 189, 189));
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    font-size: 10pt;
+
+
 }
 
+/*---------------------------CARROSEL / SLIDER --------------------------*/
+#carrosel {
+    margin: -15px 5px;
+}
+
+/*--------------------TEXTO DE BEM VINDO DA PAGINA HOME---------------*/
 .bemVindoGeral {
     margin-bottom: -11px;
 }
@@ -184,44 +207,51 @@ li {
     text-align: center;
 }
 
+.bem-vindo h2 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 35px;
+    font-size: 16pt;
+    margin-bottom: -5px;
+}
+
+.cozinha1 {
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.cozinha2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .imagensCozinha img {
     padding-bottom: 40px;
+
 }
 
 .bem-vindo {
     background: linear-gradient(to top, #da9c95b9, rgba(255, 255, 255, 0.738));
     text-align: center;
-    margin-top: -48px;
+    margin-top: -35px;
     margin-bottom: -18px;
 }
 
 .bem-vindo img {
     height: 120px;
-    max-width: 190px;
-    max-height: 150px;
-    border-radius: 5px 5px;
+    width: 180px;
+
+
 }
 
-.sobreObar img {
-    margin-top: -19px;
-    margin-bottom: -20px;
-    width: 100%;
-}
-
-#texto {
-    text-align: center;
-    font-family: sans-serif;
-}
-
-#texto h4 {
-    margin-top: 20px;
-    margin-bottom: -5px;
-    padding: 5px;
-    background-color: #B06761;
-    color: white;
-}
-
+/*-------------------- CARDS DO CARDAPIO DA PAGINA HOME ---------------------*/
 .card {
     margin: 25px;
     background-color: white;
@@ -259,22 +289,26 @@ li {
 
 .cardapio-index {
     text-align: center;
-    background-color: #B06761;
+    background: linear-gradient(to left, #b7281bd5, rgb(233, 189, 189));
     color: #fff;
     font-family: sans-serif;
     margin-bottom: -19px;
+
 }
 
 .cardapio-index h4 {
-    padding: 2%;
+
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    font-size: 13pt;
+
 }
 
 .pratos {
     background-color: #ffffff53;
     box-shadow: #B06761 1px 1px 6px;
     text-align: center;
-
-    width: 600px;
+    width: 500px;
 }
 
 .mae-pratos {
@@ -538,12 +572,94 @@ li {
 
 
 
-@media screen and (min-width:1100px) {
+@media screen and (min-width:1000px) {
     .pratos {
         display: flex;
         flex-wrap: nowrap;
     }
 
+    .bem-vindo p {
+        margin-bottom: 50px;
+        text-align: center;
+
+    }
+
+    .imagensCozinha {
+        display: flex;
+        justify-content: space-between;
+        margin: 2px;
+        margin-top: -70px;
+        flex-direction: column;
+        padding: 59px;
+        gap: 25px;
+    }
+
+    .imagensCozinha img {
+        width: 313px;
+        height: 240px;
+    }
+
+    .cozinha1 {
+        gap: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .cozinha2 {
+        display: flex;
+        gap: 40px;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+
+    #carrosel {
+        margin-top: 42px;
+        margin-left: 0px;
+        height: 517px;
+        text-align: center;
+        width: 100%;
+        background: linear-gradient(to top, #f4b7b1, #f0e1df);
+    }
+    #carrosel img{
+        
+        height: 516px;
+           
+    }
+    .frase{
+        margin-top: -10px;
+    }
+
+
+    /* MENU DESKTOP */
+
+    #topo {
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+    }
+
+
+    #itens {
+        display: none;
+        display: flex;
+        gap: 90px;
+        background-color: #ffffff00;
+        justify-content: flex-end;
+        margin-top: -36px;
+        margin-right: 55px;
+    }
+
+    #iconMenu {
+        display: none;
+    }
+
+    #iconClose {
+        display: none;
+    }
+
+
+
 }
-
-

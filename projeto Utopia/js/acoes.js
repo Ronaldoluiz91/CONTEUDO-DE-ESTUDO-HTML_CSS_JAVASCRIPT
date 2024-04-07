@@ -1,4 +1,6 @@
 //alert('funcionou')
+
+
 var btnmostrar = document.getElementById('iconMenu'); // icone  do menu
 var menu = document.getElementById('itens'); // menu a ser ocultado e/ou mostrado
 var logo = document.getElementById('logotipo'); // logotipo do site
@@ -33,4 +35,22 @@ btnOcultar.addEventListener('click', function() {
  logo.style.display = 'block'
 })
 
+
+// Slider da pagina Index
+
+function slide1(){
+    document.getElementById('img1Carrosel').src="imagens/Bar-copia.jpg";
+    setTimeout("slide2()", 3000)
+    
+    }
+    
+    function slide2(){
+    document.getElementById('img1Carrosel').src="imagens/barbonito11-copia.jpg";
+    setTimeout("slide3()", 3000)
+    }
+    
+    function slide3(){
+    document.getElementById('img1Carrosel').src="imagens/bar-bonito2-copia.jpg";
+    setTimeout("slide1()", 3000)
+    }
 
