@@ -45,12 +45,17 @@ function slide1(){
     }
     
     function slide2(){
-    document.getElementById('img1Carrosel').src="imagens/barbonito11-copia.jpg";
+    document.getElementById('img1Carrosel').src="imagens/restaurante13.jpg";
     setTimeout("slide3()", 3000)
     }
     
     function slide3(){
-    document.getElementById('img1Carrosel').src="imagens/bar-bonito2-copia.jpg";
-    setTimeout("slide1()", 3000)
+    document.getElementById('img1Carrosel').src="imagens/restaurante11.jpg";
+    setTimeout("slide4()", 3000)
     }
+
+    function slide4(){
+        document.getElementById('img1Carrosel').src="imagens/restaurante12.jpg";
+        setTimeout("slide1()", 3000)
+        }
 

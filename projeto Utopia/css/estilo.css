@@ -233,7 +233,7 @@ li {
 }
 
 .imagensCozinha img {
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 
 }
 
@@ -314,7 +314,7 @@ li {
 .mae-pratos {
     display: flex;
     justify-content: center;
-    background-image: url(../imagens/cozinha-restaurante.jpg);
+
 }
 
 /*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
@@ -533,7 +533,9 @@ li {
 }
 
 
-/* começando a parte responsiva da pagina Index */
+/* PAGINA INDEX PARA TABLET */
+
+
 @media screen and (min-width:768px) {
     .pratos {
         display: flex;
@@ -568,7 +570,62 @@ li {
         align-items: center;
     }
 
+    .rodape img {
+        margin: 0;
+    }
+
+    .bem-vindo img {
+        height: 155px;
+        width: 220px;
+    }
+
+    .bem-vindo p {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .imagensCozinha {
+        margin: -38px;
+        padding: 57px;
+    }
+
+    .cozinha1 {
+        display: flex;
+        gap: 7px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 45px;
+    }
+
+    .cozinha2 {
+        display: flex;
+        gap: 7px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .texto1{
+        text-align: center;
+        width: 200px;
+        margin-top: -6px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10pt;
+        color: black;
+        font-style: italic;
+    }
+    .todosTexto{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .cardapio-index h4{
+        margin-top: 75px;
+    }
+
 }
+
+
 
 
 
@@ -579,37 +636,50 @@ li {
     }
 
     .bem-vindo p {
-        margin-bottom: 50px;
+        margin-bottom: 24px;
         text-align: center;
-
     }
+
 
     .imagensCozinha {
-        display: flex;
+        /* display: flex; */
         justify-content: space-between;
-        margin: 2px;
+        margin: -50px;
         margin-top: -70px;
-        flex-direction: column;
-        padding: 59px;
-        gap: 25px;
-    }
+        /* flex-direction: column; */
+        padding: 80px;
+        /* gap: 25px; */
+}
+
+.texto1{
+    text-align: center;
+    width: 200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.todosTexto{
+    display: flex;
+    justify-content: center;
+    gap: 126px;
+    align-items: center;
+}
 
     .imagensCozinha img {
-        width: 313px;
+        width: 303px;
         height: 240px;
+       
     }
 
     .cozinha1 {
-        gap: 40px;
+       
         display: flex;
-        justify-content: space-evenly;
+       
         flex-wrap: nowrap;
     }
 
     .cozinha2 {
         display: flex;
-        gap: 40px;
-        justify-content: space-evenly;
+      
+      
         flex-wrap: nowrap;
     }
 
@@ -622,12 +692,15 @@ li {
         width: 100%;
         background: linear-gradient(to top, #f4b7b1, #f0e1df);
     }
-    #carrosel img{
-        
+
+    #carrosel img {
+
         height: 516px;
-           
+        width: 100%;
+
     }
-    .frase{
+
+    .frase {
         margin-top: -10px;
     }
 
@@ -640,7 +713,6 @@ li {
         width: 100%;
 
     }
-
 
     #itens {
         display: none;
@@ -659,7 +731,36 @@ li {
     #iconClose {
         display: none;
     }
+}
+
+/* PAGINA CARDAPIO PARA TABLET */
+
+@media screen and (min-width:750px) {
+    .cardapio-t {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+
+    }
+
+    .card-cardapio {
+        width: 350px;
+    }
 
 
+}
+
+/*Pagina CARDAPIO PARA DESKTOP */
+
+@media screen and (min-width: 1000px) {
+    .menu-cardapios {
+        margin-top: 50px;
+    }
+
+    .card-cardapio {
+        width: 373px;
+        margin-left: 10px;
+    }
 
 }
