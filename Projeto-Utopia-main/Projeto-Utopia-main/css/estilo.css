@@ -1,0 +1,959 @@
+@charset "utf-8";
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rubik+Mono+One&family=Rubik+Scribble&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Racing+Sans+One&family=Rubik+Mono+One&family=Rubik+Scribble&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+
+
+/*Criando regras utilizando o fluxo do MOBILE FIRST*/
+/*Regras gerais*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+hr {
+    max-width: 200px;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: -40px;
+
+}
+
+/*Regras do Topo*/
+#topo {
+    background-color: white;
+    /* height: 40px; */
+    background: linear-gradient(to left, #b7281bd5, rgb(233, 189, 189));
+    position: relative;
+    bottom: 22px;
+    height: 40px;
+    margin-bottom: -20px;
+}
+
+h1 img {
+    width: 50px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+#iconMenu {
+    color: white;
+    cursor: pointer;
+    min-height: 40px;
+    display: flex;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+    font-size: 40px;
+    justify-content: end;
+    position: relative;
+    bottom: 70px;
+
+}
+
+#iconClose {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    font-size: 40px;
+    padding-left: 1%;
+}
+
+
+#itens {
+    min-height: 40px;
+    font-weight: bold;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+    display: none;
+    position: relative;
+    bottom: 40px;
+    background-color: rgba(33, 33, 33, 0.901);
+
+}
+
+nav a:link,
+nav a:visited,
+#iconMenu:link,
+#iconMenu:visited {
+    text-decoration: none;
+    color: white;
+    transition: background-color 1s;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+}
+
+nav a:hover,
+nav a:focus,
+#iconMenu:hover,
+#iconMenu:focus {
+    color: white;
+    border-radius: 5%;
+}
+
+/*Regras para o FOOTER*/
+.rodape {
+    border-top: solid #B06761 5px;
+    background-color: #B06761;
+    color: #7f7f80;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape p,
+li {
+    font-size: 16px;
+}
+
+.rodape img {
+    margin: 0 5px;
+}
+
+.rodape-conteudo {
+    padding: 15px;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* .rodape-conteudo ul {
+    list-style: none;
+    margin: o auto;
+    padding: 10px 0;
+} */
+
+#logo-rodape {
+    min-width: 146px;
+    width: 150 px;
+    /* margin: 0 auto; */
+}
+
+.endereco {
+    color: white;
+    margin-top: 10px;
+
+}
+
+.endereco h1 {
+    /* color: #fbae16; */
+    /* font-family: "Oswald", Sans-serif; */
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+#logo-rodape img {
+    margin-top: 25px;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* .menu-rodape a {
+    text-decoration: none;
+    color: #7f7f80;
+} */
+
+.menu-rodape a:hover {
+    color: #fff;
+}
+
+/* .redes img {
+    min-width: 35px;
+    width: 35px;
+} */
+
+.assinatura {
+    color: #fff;
+    background-color: #7f7f80;
+    text-align: center;
+    height: auto;
+}
+
+.assinatura p {
+    padding-top: 3%;
+}
+
+.footerColum {
+    /* width: 30%; */
+    margin: 1%;
+
+}
+
+hr {
+    display: block;
+}
+
+/*Regras Para o Index (Conteudo)*/
+.frase {
+    background: linear-gradient(to left, #b7281bd5, rgb(233, 189, 189));
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    font-size: 10pt;
+
+
+}
+
+/*---------------------------CARROSEL / SLIDER --------------------------*/
+/* #carrosel {
+    margin: -15px 5px;
+    
+}
+#img1Carrosel{
+    transition: opacity 0.5s ease;
+} */
+
+/* .slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 1s ease; /* Transição de fade */
+/* }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+  } */
+
+.slider {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+
+
+/*--------------------TEXTO DE BEM VINDO DA PAGINA HOME---------------*/
+.bemVindoGeral {
+    margin-bottom: -11px;
+}
+
+.bem-vindo p {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.bem-vindo h2 {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 35px;
+    font-size: 16pt;
+    margin-bottom: -5px;
+}
+
+.cozinha1 {
+    display: flex;
+    /* gap: 0px; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    /* margin-left: 92px; */
+}
+
+.Galeria {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -20px;
+
+}
+
+.Galeria img {
+    width: 90px;
+}
+
+.imagensCozinha img {
+    padding-bottom: 13px;
+}
+
+
+.bem-vindo {
+    background: linear-gradient(to top, #da9c95b9, rgba(255, 255, 255, 0.738));
+    text-align: center;
+    margin-top: -35px;
+    margin-bottom: -18px;
+    padding: 30px;
+}
+
+.text-Sejabemvindo {
+    font-size: 26px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+
+}
+
+.bem-vindo img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: -25px;
+
+
+}
+
+
+
+
+/*-------------------- CARDS DO CARDAPIO DA PAGINA HOME ---------------------*/
+/* .card {
+    margin: 25px;
+    background-color: white;
+    padding: 0px;
+    padding-bottom: 1px;
+    border: #B06761 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: black 1px 1px 5px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: grey 1px 1px 5px;
+}
+
+.card img:hover {
+    filter: opacity(0.6);
+    transition: 1s;
+}
+
+.card h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #b7281b, #dcc3c3);
+    padding: 10px;
+    color: white;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+
+.cardapio-index {
+    text-align: center;
+    color: black;
+    margin-bottom: -19px;
+
+}
+
+.cardapio-index h4 {
+margin-top: 70px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    font-size: 19pt;
+
+}
+
+.pratos {
+    background-color: #ffffff53;
+    box-shadow: #B06761 1px 1px 6px;
+    text-align: center;
+    width: 500px;
+}
+
+.mae-pratos {
+    display: flex;
+    justify-content: center;
+    
+} */
+
+.vejaCardapio {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.vejaCardapio button {
+    background-color: #000000;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.vejaCardapio img {
+    width: 100%;
+    height: 390px;
+    margin: 0px;
+}
+
+/*REGRAS PARA CARDAPIO (PAGINA CARDAPIO)*/
+.menu-cardapios {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-cardapios h3 {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #f4d6d6, #f59a9a);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: grey 1px 1px 6px;
+}
+
+.item-cardapios:hover {
+    filter: opacity(0.6);
+    transition: 2s;
+}
+
+.conteudo-cardapio {
+    background: linear-gradient(to left, #f4b7b1, #f0e1df);
+    margin: 2px;
+    box-shadow: grey 1px 1px 5px;
+}
+
+.conteudo-cardapio h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: #B06761;
+    color: white;
+    padding: 5px;
+}
+
+.preço {
+    color: #B06761;
+}
+
+/*CARD CARDAPIO*/
+.card-cardapio img {
+    width: 75px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.card-cardapio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    padding: 3px;
+    background-color: white;
+    text-align: justify;
+}
+
+.textTam {
+    width: 140px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.card-cardapio p {
+    max-width: 150px;
+}
+
+/*PAGINA CONTATO*/
+#form-contato {
+    margin: auto;
+    max-width: 700px;
+    width: 95%;
+    text-align: center;
+}
+
+#form-contato input,
+#form-contato textarea,
+#form-contato select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+
+#form-contato input,
+#form-contato select {
+    height: 30px;
+}
+
+#form-contato label {
+    font-weight: bold;
+}
+
+.titulo-contato h3 {
+    text-align: center;
+    background-color: #B06761;
+    color: white;
+}
+
+#form-contato button {
+    background-color: #B06761;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#form-contato button:hover,
+#form-contato button:focus {
+    cursor: pointer;
+}
+
+.conteudo-contato {
+    margin: 5%;
+    text-align: center;
+}
+
+/*Pagina reserva*/
+#form-reserva input,
+#form-reserva select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+
+#form-reserva input,
+#form-reserva select {
+    height: 30px;
+}
+
+#form-reserva label {
+    font-weight: bold;
+}
+
+.conteudo-reserva {
+    margin: 5%;
+    text-align: center;
+}
+
+.conteudo-reserva button {
+    background-color: #B06761;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+/*MODAL PAGINA RESERVA*/
+
+.modal-container {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin-left: 210px;
+    margin-top: -265px;
+    border-radius: 20px;
+    height: 74px;
+    display: none;
+}
+
+
+/*confirme reserva*/
+.titulo-confirm-reserva {
+    text-align: center;
+}
+
+#confirm-reserva input,
+#confirm-reserva select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+
+#confirm-reserva input,
+#confirm-reserva select {
+    height: 30px;
+}
+
+.confirm-reserva {
+    margin: 5%;
+}
+
+/*Pagina trabalhe conosco*/
+.trabalhe {
+    text-align: center;
+}
+
+.trabalhe h3 {
+    background-color: #B06761;
+    color: white;
+}
+
+.botao {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#form-trabalhe {
+    margin: auto;
+    max-width: 700px;
+    width: 95%;
+}
+
+#form-trabalhe input,
+#form-trabalhe textarea,
+#form-trabalhe select {
+    border: solid 1px black;
+    width: 100%;
+    margin: 4px auto;
+}
+
+#form-trabalhe input,
+#form-trabalhe select {
+    height: 30px;
+}
+
+#form-trabalhe label {
+    font-weight: bold;
+}
+
+#form-trabalhe p {
+    text-align: center;
+}
+
+#form-trabalhe button {
+    background-color: #B06761;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+
+/* começando a parte responsiva da pagina Index TABLET */
+@media screen and (min-width:767px) {
+    .vejaCardapio img {
+        width: 70%;
+    }
+
+
+
+    .pratos {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: 334px;
+    }
+
+    .card img {
+        width: 440px;
+        height: 300px;
+    }
+
+    .card h5 {
+        margin-top: 45px;
+    }
+
+    .endereco {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .rodape-conteudo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 95px;
+    }
+
+    .menu-cardapios {
+        margin-top: 90px;
+    }
+
+    .card-cardapio {
+        width: 368px;
+
+
+    }
+
+    .cardapio-t {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+
+    }
+
+    #topo {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+
+
+    }
+
+    #itens {
+        display: block;
+        display: flex;
+        gap: 50px;
+        background-color: #ffffff00;
+        justify-content: flex-end;
+        margin-top: -36px;
+        margin-right: 55px;
+        height: 80px;
+    }
+
+    #iconMenu {
+        display: none;
+    }
+
+    #iconClose {
+        display: none;
+    }
+
+    #carrosel img {
+        margin-top: 97px;
+    }
+
+    .bem-vindo {
+        padding: 30px;
+    }
+
+    .bem-vindo img {
+        height: 155px;
+        width: 220px;
+    }
+
+    .bem-vindo p {
+        margin-bottom: 35px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .bem-vindo h2 {
+        margin-top: 20px;
+    }
+
+    .imagensCozinha {
+        margin: -38px;
+        padding: 20px;
+    }
+
+    .cozinha1 {
+        display: flex;
+        gap: 36px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-bottom: 45px;
+    }
+
+    .cozinha2 {
+        display: flex;
+        gap: 36px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-top: -70px;
+    }
+
+    .texto1 {
+        text-align: center;
+        width: 200px;
+        margin-top: -6px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10pt;
+        color: black;
+        font-style: italic;
+    }
+
+    /* FOOTER */
+
+    hr {
+        display: none;
+    }
+
+}
+
+
+
+/* TELA RESPONSIVA PARA DESKTOP */
+
+@media screen and (min-width:1200px) {
+    .pratos {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .bem-vindo p {
+        margin-bottom: 50px;
+        text-align: center;
+
+    }
+
+    .imagensCozinha {
+        display: flex;
+        justify-content: space-between;
+        margin: 2px;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .imagensCozinha img {
+        width: 500px;
+        height: 370px;
+    }
+
+    .cozinha1 {
+        gap: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .cozinha2 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        gap: 0px;
+    }
+
+    .texto1 {
+        width: 345px;
+    }
+
+
+    #carrosel {
+        margin-top: 42px;
+        margin-left: 0px;
+        height: 517px;
+        text-align: center;
+        width: 100%;
+        background: linear-gradient(to top, #f4b7b1, #f0e1df);
+    }
+
+    #carrosel img {
+        width: 100%;
+        height: 516px;
+        margin-top: 40px;
+
+    }
+
+    .frase {
+        margin-top: -10px;
+    }
+
+
+    /* MENU DESKTOP */
+
+    #topo {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+
+
+    }
+
+
+    #itens {
+        display: block;
+        display: flex;
+        gap: 90px;
+        background-color: #ffffff00;
+        justify-content: flex-end;
+        margin-top: -36px;
+        margin-right: 55px;
+        height: 80px;
+    }
+
+    #iconMenu {
+        display: none;
+    }
+
+    #iconClose {
+        display: none;
+    }
+
+    .rodape-conteudo {
+        gap: 30px;
+    }
+
+    .bemVindoGeral {
+        margin-top: 50px;
+    }
+
+    .bem-vindo img {
+        width: 426px;
+        height: 352px;
+    }
+
+
+    .cardapio-t {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .card-cardapio {
+        width: 496px;
+        height: 135px;
+    }
+
+    .card-cardapio img {
+        width: 150px;
+        height: 135px;
+    }
+
+    .menu-cardapios {
+        margin-top: 50px;
+    }
+
+    .pratos {
+
+        flex-wrap: nowrap;
+    }
+
+    /* PAGINA RESERVA PARA DESKTOP */
+    .titulo-confirm-reserva {
+        margin-top: 130px;
+    }
+}
